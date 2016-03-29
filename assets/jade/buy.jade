@@ -1,0 +1,102 @@
+extends ./template/template.jade
+
+block title
+	title Где купить
+
+block content
+	// BEGIN TITLE 
+	.top-buy
+		.top-buy__content
+			.container
+				.side-content
+					.sides
+						.top-buy__side.top-buy__side_l
+							.title
+								h1.title__text Где купить
+						.top-buy__side.top-buy__side_r
+							p.top-buy__subtitle Найдите ближайшие к вам сладости
+							a(href="#").top-buy__city
+								i.icon.icon_marker.top-buy__icon
+								| Екатеринбург
+	// END TITLE 
+
+
+	// BEGIN BUY-MAP 
+	.buy-map#buymap
+	script(src='js/buyMap.js')
+	script(src='https://maps.googleapis.com/maps/api/js?callback=initBuyMap')
+	// END BUY-MAP 
+
+
+	// BEGIN BUY-ADDRES 
+	.buy-addres
+		.container
+			.side-content
+				.buy-city
+					.buy-city__city Екатеринбург
+					.buy-city__text Приглашаем вас посетить фирменные торговые точки нашей компании
+					a(href="javascript:;").button.button_broun_border.buy-city__button Выбрать другой город
+				.colums
+					.col-buy
+						dl.buy-addres__list
+							dt.buy-addres__addres ул. Баумана, 56
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Бардина, 21
+							dd.buy-addres__time-work часы работы: 09.00 - 20.00, без выходных
+							dt.buy-addres__addres ул. 8 марта, 204-б
+							dd.buy-addres__time-work часы работы: 09.00 - 19.00, без выходных
+							dt.buy-addres__addres ул. Бахчиванджи, 14
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Белоярская, 19
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Блюхера, 32
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Военная, 12
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Волгоградская, 189
+							dd.buy-addres__time-work часы работы: 09.00-19.00, без выходных
+							dt.buy-addres__addres ул. Восстания, 56
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Высоцкого, 14
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+					.col-buy
+						dl.buy-addres__list
+							dt.buy-addres__addres ул. Краснолесья, 109
+							dd.buy-addres__time-work часы работы: 09.00-21.00, без выходных
+							dt.buy-addres__addres ул. Кузнецова, 2
+							dd.buy-addres__time-work часы работы: 09.00 - 20.00, без выходных
+							dt.buy-addres__addres ул. Мира, 3
+							dd.buy-addres__time-work часы работы: 09.00 - 20.00, без выходных
+							dt.buy-addres__addres ул. Белоярская, 19
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. П.Тольятти, 30
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Родонитовая, 17
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Санаторная, 3
+							dd.buy-addres__time-work часы работы: 09.00-19.00, без выходных
+							dt.buy-addres__addres ул. Техническая, 34
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Восточная, 15-а
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Заводская, 17
+							dd.buy-addres__time-work часы работы пн-сб: 09.00-20.00, вс: 09.00-19.00
+					.col-buy
+						dl.buy-addres__list
+							dt.buy-addres__addres ул. Ильича, 38
+							dd.buy-addres__time-work часы работы: 09.00-21.00, без выходных
+							dt.buy-addres__addres ул. Коммунистическая, 101
+							dd.buy-addres__time-work часы работы: 09.00 - 20.00, без выходных
+							dt.buy-addres__addres ул. Космонавтов, 41
+							dd.buy-addres__time-work часы работы: 09.00 - 20.00, без выходных
+							dt.buy-addres__addres ул. Космонавтов, 86
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Уральская, 60
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Фрезеровщиков, 27
+							dd.buy-addres__time-work часы работы: 09.00-20.00, без выходных
+							dt.buy-addres__addres ул. Шаумяна, 105/1
+							dd.buy-addres__time-work часы работы: 09.00-19.00, без выходных
+
+
+	// END BUY-ADDRES 

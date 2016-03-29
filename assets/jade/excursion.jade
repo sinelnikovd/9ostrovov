@@ -1,0 +1,123 @@
+extends ./template/template.jade
+
+block title
+	title ЭКСКУРСИИ НА ПРОИЗВОДСТВО
+
+block content
+	// BEGIN TITLE 
+	.container
+		.side-content
+			.title
+				h1.title__text ЭКСКУРСИИ НА ПРОИЗВОДСТВО
+	// END TITLE 
+
+	// BEGIN DESCRIPTION 
+	.container
+		.side-content
+			.description
+				p.description__title.description__title_bold Сладкие шедевры ручной работы – многоярусные торты, настоящие сказочные истории из сахара и крема и веселые сюрпризы для Ваших любимых.
+				p.description__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
+	// END DESCRIPTION 
+
+
+	// BEGIN TOP-PHOTO 
+	.excursion-photo
+		.container
+			.side-content
+				img(src="img/excursion-photo.jpg", alt="").excursion-photo__img
+	// END TOP-PHOTO 
+
+	// BEGIN REQUEST-EXCURSION 
+	.request-excursion
+		.container
+			.side-content
+				h2.request-excursion__title Заявка на экскурсию
+				form(action="/").request-excursion__form
+					.request-excursion__control
+						input(type="text" placeholder="Ваше имя").input.request-excursion__input
+					.request-excursion__control
+						input(type="text" placeholder="Контактный телефон").input.request-excursion__input
+					.request-excursion__control.data-inputmask
+						label(for="people").request-excursion__label На экскурсию пойдут:
+						select(name="people")#people.request-excursion__select.select-nice
+							option(value="1") Дети со взрослыми
+							option(value="2") Дети со взрослыми
+							option(value="3") Дети со взрослыми
+					.request-excursion__control.request-excursion__control_50
+						label(for="ticket").request-excursion__label Кол-во билетов:
+						input(type="text")#ticket.input.request-excursion__input
+					.request-excursion__control
+						button(type="submit").button.button_broun.request-excursion__button Заказать
+	// END REQUEST-EXCURSION 
+
+	// BEGIN EXCURSION-TEXT 
+	.excursion-text
+		.container
+			.side-content
+				p.excursion-text__p Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
+	// END EXCURSION-TEXT 
+
+	// BEGIN WORKSHOP 
+	.workshop
+		.container
+			.side-content
+				.colums
+					.col-w1
+						// BEGIN WORKSHOP__CARD 
+						.workshop__card.workshop__card_line_2
+							a(href="#").workshop__link
+								.workshop__preview
+									span.workshop__title Кондитерский цех
+						// END WORKSHOP__CARD 
+					.col-w2
+						.col-w-line
+							.col-w50.col-w50_l
+								// BEGIN WORKSHOP__CARD 
+								.workshop__card.workshop__card_line_1
+									a(href="#").workshop__link
+										.workshop__preview
+											span.workshop__title Кондитерский цех
+								// END WORKSHOP__CARD 
+							.col-w50.col-w50_r
+								// BEGIN WORKSHOP__CARD 
+								.workshop__card.workshop__card_line_1
+									a(href="#").workshop__link
+										.workshop__preview
+											span.workshop__title Кондитерский цех
+								// END WORKSHOP__CARD 
+						.col-w-line
+							// BEGIN WORKSHOP__CARD 
+							.workshop__card.workshop__card_line_1
+								a(href="#").workshop__link
+									.workshop__preview
+										span.workshop__title Кондитерский цех
+							// END WORKSHOP__CARD 
+					.col-w3
+						.col-w-line
+							// BEGIN WORKSHOP__CARD 
+							.workshop__card.workshop__card_line_1
+								a(href="#").workshop__link
+									.workshop__preview
+										span.workshop__title Кондитерский цех
+							// END WORKSHOP__CARD 
+						.col-w-line
+							// BEGIN WORKSHOP__CARD 
+							.workshop__card.workshop__card_line_1
+								a(href="#").workshop__link
+									.workshop__preview
+										span.workshop__title Кондитерский цех
+							// END WORKSHOP__CARD 
+	// END WORKSHOP 
+
+	// BEGIN REVIEWS 
+	.reviews.reviews_ptn
+		.container
+			.side-content
+				h2.h2 Отзывы
+				hr.hr.reviews__hr
+				form(action="/").reviews__form
+					textarea(name="", rows="10").textarea.reviews__textarea
+					.button-container
+						button(type="submit").button.button_broun.reviews__button Оставить отзыв
+	// END REVIEWS 
+

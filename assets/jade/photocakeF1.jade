@@ -1,0 +1,72 @@
+extends ./template/template.jade
+
+block title
+	title ФОТОТОРТЫ
+
+block content
+
+	.container
+		.side-content
+			// BEGIN TITLE 
+			.title-price
+				.title-price__side.title-price__side_l
+					.title
+						h1.title__text Фототорт ф№1
+				.title-price__side.title-price__side_r
+					.top__price от 
+						span.title__price-number 1500 <span class="rubl_30 rubl_black">Р</span>/КГ
+			// END TITLE 
+
+			// BEGIN SLIDER-VERTICAL 
+			.slider-vertical
+			// END SLIDER-VERTICAL 
+
+			// BEGIN PHOTOCAKE__BUTTON-LINE 
+			.photocake__button-line
+				a(href="#").button.button_broun.photocake__button-line__button Сделать заказ на сайте
+				a(href="#").button.button_broun_border.photocake__button-line__button.photocake__button-line__bytton_white Заказать торт по телефону
+				a(href="#").photocake__button-line_link Консультация кондитера
+			// END PHOTOCAKE__BUTTON-LINE 
+
+			// BEGIN REVIEWS 
+			.reviews
+				h2.h2 Отзывы
+				hr.hr.reviews__hr
+				form(action="/").reviews__form
+					textarea(name="", rows="10").textarea.reviews__textarea
+					.button-container
+						button(type="submit").button.button_broun.reviews__button Оставить отзыв
+			// END REVIEWS 
+
+	// BEGIN DELIVERY-BANNER 
+	.delivery-banner
+		.container
+			.side-content
+				.delivery-banner__content
+					i.icon.icon_car
+					h3.delivery-banner__title ДОСТАВКА
+					p.delivery-banner__text На следующий день с 9:00 до 19:00 <br>или в любую выбранную дату
+	// END DELIVERY-BANNER 
+
+
+	// BEGIN SHOP-BANNER 
+	.shop-banner
+		.container
+			.side-content
+				.shop-banner__content
+					i.icon.icon_shop-w
+					h3.shop-banner__title ГДЕ КУПИТЬ?
+					a(href="#").button.button_white.shop-banner__button Посмотрите адреса в вашем городе
+	// END SHOP-BANNER 
+
+
+	// BEGIN SALES-BANNER 
+	.sales-banner
+		.container
+			.side-content
+				.sales-banner__content
+					i.icon.icon_persent
+					h3.sales-banner__title Как получить скидку?
+					p.sales-banner__text 
+					a(href="#").button.button_white.sales-banner__button Все акции и скидки
+	// END SALES-BANNER 

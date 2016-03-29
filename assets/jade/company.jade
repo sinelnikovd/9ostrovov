@@ -1,0 +1,183 @@
+extends ./template/template.jade
+
+block title
+	title О КОМПАНИИ
+
+block content
+	.container
+		.side-content
+			// BEGIN TITLE 
+			.title
+				h1.title__text О КОМПАНИИ
+			// END TITLE 
+			// BEGIN DESCRIPTION 
+			.description
+				p.description__title.description__title_bold "Девять островов" - это лидер кондитерского рынка <br>на территории Екатеринбурга и Свердловской области!
+				p.description__text Ассортимент компании насчитывает более 100 позиций продукции! "Девять островов" работает, чтобы удовлетворять самые взыскательные вкусы наших покупателей, даря им атмосферу праздника, восторга и радости!!! <br>Наши торты готовятся только из натуральных ингредиентов – свежих сочных фруктов и ягод, отборной пшеничной и миндальной муки, цельных сливок, легкого творога и аппетитного желе. Из множества сладких основ с разнообразными начинками <br>Вы можете выбрать любимую или попробовать новые вкусы.
+			// END DESCRIPTION 
+
+
+			// BEGIN ABOUT 
+			.about
+				// BEGIN ABOUT__ITEM 
+				.about__item
+					i.icon.icon_star
+					p.about__number 15
+					p.about__text лет на рынке <br>кондитерских изделий
+				// END ABOUT__ITEM 
+				// BEGIN ABOUT__ITEM 
+				.about__item
+					i.icon.icon_shop
+					p.about__number 105
+					p.about__text фирменных <br>торговых точек
+				// END ABOUT__ITEM 
+				// BEGIN ABOUT__ITEM 
+				.about__item
+					i.icon.icon_people
+					p.about__number 3000
+					p.about__text квалифицированных <br>сотрудников
+				// END ABOUT__ITEM 
+				// BEGIN ABOUT__ITEM 
+				.about__item
+					i.icon.icon_cake
+					p.about__number 200
+					p.about__text выдов продукции
+				// END ABOUT__ITEM 
+			// END ABOUT 
+
+			// BEGIN HISTORY 
+			.history
+				.history__line.history__line_1
+					.history__year.history__year_big.history__year_red
+						.history__number 2000
+						.history__description Основание компании
+					.history__year.history__year_medium.history__year_2001
+						.history__number 2001
+						.history__description Успешный старт
+					.history__year.history__year_medium.history__year_2003
+						.history__number 2003
+						.history__description Первые достижения
+					.history__r-border
+				.history__line.history__line_2
+					.history__l-border
+					.history__year.history__year_small.history__year_2010
+						.history__number 2010
+						.history__description Стабильное развитие
+					.history__year.history__year_big.history__year_2008
+						.history__number 2008
+						.history__description Лидер банка
+					.history__year.history__year_small.history__year_2005
+						.history__number 2005
+						.history__description Открытие <br>100 торговых точек
+
+				.history__line.history__line_3
+					.history__year.history__year_medium.history__year_2012
+						.history__number 2012
+						.history__description Расширение ассортимента
+					.history__year.history__year_medium.history__year_2015
+						.history__number 2015
+						.history__description Лучшая кондитерская года
+					.history__year.history__year_big.history__year_red.history__year_2016
+						.history__number 2016
+						.history__description Новые горизонты развития
+			// END HISTORY 
+
+			// BEGIN PRODUCTION-COMPANY 
+			.production-company
+				.production-company__description
+					h2.production-company__title ПРОИЗВОДСТВО
+					p.production-company__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
+
+					a(href="#").production-company__link Подробнее
+						i.icon.icon_b-left.excursion-banner__left
+				.production-company__icon
+					i.icon.icon_cap
+			// END PRODUCTION-COMPANY 
+
+			// BEGIN EXCURSION-COMPANY 
+			.excursion-company
+				.sides
+					.excursion-company__icon
+						i.icon.icon_camera
+					.excursion-company__description
+						h2.excursion-company__title ЭКСКУРСИЯ НА ПРОИЗВОДСТВО
+						p.excursion-company__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
+
+						a(href="#").excursion-company__link Подробнее
+							i.icon.icon_b-left.excursion-banner__left
+				hr.hr.excursion-company__hr
+				// BEGIN REQUEST-EXCURSION 
+				.request-excursion.excursion-company__.request-excursion
+					h2.request-excursion__title Заявка на экскурсию
+					form(action="/").request-excursion__form
+						.request-excursion__control
+							input(type="text" placeholder="Ваше имя").input.request-excursion__input
+						.request-excursion__control
+							input(type="text" placeholder="Контактный телефон").input.request-excursion__input.data-inputmask
+						.request-excursion__control
+							label(for="people").request-excursion__label На экскурсию пойдут:
+							select(name="people")#people.request-excursion__select.select-nice
+								option(value="1") Дети со взрослыми
+								option(value="2") Дети со взрослыми
+								option(value="3") Дети со взрослыми
+						.request-excursion__control.request-excursion__control_50
+							label(for="ticket").request-excursion__label Кол-во билетов:
+							input(type="text")#ticket.input.request-excursion__input
+						.request-excursion__control
+							button(type="submit").button.button_broun.request-excursion__button Заказать
+				// END REQUEST-EXCURSION 
+			// END EXCURSION-COMPANY 
+
+			// BEGIN WORK-COMPANY 
+			.work-company
+				.work-company__description
+					h2.work-company__title РАБОТА В КОМПАНИИ
+					p.work-company__text «Кадры решают всё» -в наши дни этот известный лозунг становится все более актуальным: необходимо работать на опережение и готовиться к предстоящей борьбе за таланты, уделяя особое внимание молодым специалистам, помогая им развиваться. Сотрудники нашего коллектива – главная ценность, мы ценим каждого кто приносит вклад в развитие и процветание нашей компании.
+
+					a(href="#").work-company__link Подробнее
+						i.icon.icon_b-left.excursion-banner__left
+				.work-company__icon
+					i.icon.icon_man
+			// END WORK-COMPANY 
+			// BEGIN CONTACT 
+			.contact
+				.colums
+					.col-2.col-2-m
+						h2.contact__title Фактический адрес:
+						p.contact__addres 624071, Россия, Среднеуральск, улица Победы, 1 
+
+						p.contact__phone-title Телефон приемной:
+						p.contact__phone
+							a(href="tel:+73433727150").contact__phone-link +7 (343) 372-71-50 (51)
+
+						p.contact__phone-title Телефон заказа тортов:
+						p.contact__phone
+							a(href="tel:+73432690909").contact__phone-link +7 (343) 269-09-09
+					.col-2.col-2-m
+						h2.contact__title Почтовый адрес:
+						p.contact__addres 624071, Россия, Среднеуральск, улица Победы, 1 
+
+						p.contact__phone-title Телефон тех. поддержки:
+						p.contact__phone
+							a(href="tel:+73433727159").contact__phone-link +7 (343) 372-71-59
+
+						p.contact__email-title Email:
+						p.contact__email
+							a(href="mailto:zakaz@9ostrovov.ru").contact__email-link zakaz@9ostrovov.ru
+					.col-2.col-2-m
+						h2.contact__title Реквизиты:
+						p.contact__text.
+							ООО Торговый дом <br>
+							«Девять островов - Екатеринбург» <br>
+							ОГРН 105 660 3480 603 <br>
+							Юр. адрес: 620137, г.Екатеринбург, <br>
+							ул. Академическая, 10 <br>
+							Факт. адрес: 624071, Россия, <br>Среднеуральск, <br>
+							улица Победы, 1 <br>
+							Почтовый адрес: 624071, Россия, <br>
+							Среднеуральск, а/я 19 <br>
+							ИНН 667 00 74 009 КПП 667 001 001 <br>
+							Р/с 40702810162400000093 в ОАО "Уральский 
+							банк реконструкции и развития" <br>
+							К/с 30101810900000000795 БИК 046577795
+			// END CONTACT 

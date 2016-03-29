@@ -1,0 +1,139 @@
+extends ./template/template.jade
+
+block title
+	title Главная страница
+
+block content
+	// BEGIN TITLE 
+	.container
+		.side-content
+			.title
+				h1.title__text Торт на заказ
+	// END TITLE 
+
+	// BEGIN DESCRIPTION 
+	.container
+		.side-content
+			.description
+				p.description__title.description__title_bold Сладкие шедевры ручной работы – многоярусные торты, настоящие сказочные истории из сахара и крема и веселые сюрпризы для Ваших любимых.
+				p.description__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
+	// END DESCRIPTION 
+
+
+	// BEGIN SECTION-SLIDER 
+	.section-slider
+		.slider
+			// BEGIN SLIDER__ITEM 
+			.slider__item
+				.container
+					.side-content
+						p.slider__text <span class="bold">Наши торты готовятся только из натуральных ингредиентов – </span>свежих сочных фруктов и ягод, отборной пшеничной и миндальной муки, цельных сливок, легкого творога и аппетитного желе. Из множества сладких основ с разнообразными начинками Вы можете выбрать любимую или попробовать новые вкусы.
+			// END SLIDER__ITEM 
+	// END SECTION-SLIDER 
+
+
+	// BEGIN ORDER-STAGE 
+	.order-stage
+		.container
+			.side-content
+				h2.h2 Заказать торт очень просто
+				.order-stage__items
+					.order-stage__line
+					// BEGIN ORDER-STAGE__ITEM 
+					.order-stage__item
+						.order-stage__round
+							.order-stage__round-content
+								i.icon.icon_cake.order-stage__icon
+						p.order-stage__text
+							a(href="#").order-stage__link Выберите торт из каталога
+					// END ORDER-STAGE__ITEM 
+					// BEGIN ORDER-STAGE__ITEM 
+					.order-stage__item
+						.order-stage__round
+							.order-stage__round-content
+								i.icon.icon_weight.order-stage__icon
+						p.order-stage__text Укажите желаемый вес
+					// END ORDER-STAGE__ITEM 
+					// BEGIN ORDER-STAGE__ITEM 
+					.order-stage__item
+						.order-stage__round
+							.order-stage__round-content
+								i.icon.icon_filling.order-stage__icon
+						p.order-stage__text Подберите начинку
+					// END ORDER-STAGE__ITEM 
+					// BEGIN ORDER-STAGE__ITEM 
+					.order-stage__item
+						.order-stage__round
+							.order-stage__round-content
+								i.icon.icon_order.order-stage__icon
+						p.order-stage__text Оформить заказ
+					// END ORDER-STAGE__ITEM 
+	// END ORDER-STAGE 
+
+	// BEGIN CAKE-BY-SKETCH 
+	.cake-by-sketch
+		.container
+			.side-content
+				.cake-by-sketch__content
+					i.icon.icon_cap.cake-by-sketch__icon
+					h2.cake-by-sketch__text У ВАС ЕСТЬ ВОЗМОЖНОСТЬ ЗАКАЗАТЬ ТОРТ ПО СОБСТВЕННОМУ ЭСКИЗУ!
+					a(href="#").button.button_broun.cake-by-sketch__button Создать свой торт
+	// END CAKE-BY-SKETCH 
+
+	// BEGIN CAKE-ORDER-TWO 
+	.cake-order-two
+		.container
+			.side-content
+				h2.h2 Торты на заказ
+				.colums.cake-order-two__colums
+					.col-3.col-3-m
+						// BEGIN CAKE-ORDER-TWO-ITEM 
+						.cake-order-two-item
+							a(href="#").cake-order-two-item__link
+								.cake-order-two-item__preview
+								.cake-order-two-item__description
+									.cake-order-two-item__title
+										h3.cake-order-two-item__title-text Детские Торты
+										.cake-order-two-item__price 1500 
+											span.rubl_big Р
+									p.cake-order-two-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END CAKE-ORDER-TWO-ITEM 
+
+					.col-3.col-3-m
+						// BEGIN CAKE-ORDER-TWO-ITEM 
+						.cake-order-two-item
+							a(href="#").cake-order-two-item__link
+								.cake-order-two-item__preview
+								.cake-order-two-item__description
+									.cake-order-two-item__title
+										h3.cake-order-two-item__title-text Детские Торты
+										.cake-order-two-item__price 1500 
+											span.rubl_big Р
+									p.cake-order-two-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END CAKE-ORDER-TWO-ITEM 
+					.col-3.col-3-m
+						// BEGIN CAKE-ORDER-TWO-ITEM 
+						.cake-order-two-item
+							a(href="#").cake-order-two-item__link
+								.cake-order-two-item__preview
+								.cake-order-two-item__description
+									.cake-order-two-item__title
+										h3.cake-order-two-item__title-text Детские Торты
+										.cake-order-two-item__price 1500 
+											span.rubl_big Р
+									p.cake-order-two-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END CAKE-ORDER-TWO-ITEM 
+					.col-3.col-3-m
+						// BEGIN CAKE-ORDER-TWO-ITEM 
+						.cake-order-two-item
+							a(href="#").cake-order-two-item__link
+								.cake-order-two-item__preview
+								.cake-order-two-item__description
+									.cake-order-two-item__title
+										h3.cake-order-two-item__title-text Детские Торты
+										.cake-order-two-item__price 1500 
+											span.rubl_big Р
+									p.cake-order-two-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END CAKE-ORDER-TWO-ITEM 
+
+	// END CAKE-ORDER-TWO 

@@ -1,0 +1,2793 @@
+@import "bourbon"
+@import "settings/_normalize.sass"
+@import "settings/_vars.sass"
+@import "settings/_fonts.sass"
+@import "settings/_reset.sass"
+
+@import "libs/sprite.sass"
+@import "libs/owl.carousel.sass"
+@import "libs/nice-select.scss"
+
+
+*::-webkit-input-placeholder
+	color: #b7b7b7
+	opacity: 1
+
+
+*:-moz-placeholder
+	color: #b7b7b7
+	opacity: 1
+
+*::-moz-placeholder
+	color: #b7b7b7
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #b7b7b7
+	opacity: 1
+
+*
+	outline: none
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #424242
+
+body input:required:valid,
+body textarea:required:valid
+	color: #424242
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.3
+	font-family: "PTSansRegular", $helvetica
+	font-weight: normal
+	overflow-x: hidden
+	color: #141313
+	position: relative
+	background-color: #f2f2f2
+
+img
+	max-width: 100%
+
+.page
+	overflow: hidden
+	width: 100%
+	min-height: 100%
+	position: relative
+
+.wrapper
+	+transition(all .5s ease-in-out)
+	&.active
+		+transform(translateX(-250px))
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 2
+			background-color: rgba(0,0,0,.5)
+
+.container
+	max-width: 1190px
+	margin: 0 auto
+	padding: 0 10px
+
+
+.sides,
+.colums
+	+clearfix
+
+.side
+	float: left
+	width: 50%
+
+.side-content
+	width: 73%
+	margin-left: 27%
+
+
+.rubl
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 15px
+		left: 0
+		width: 7px
+		height: 2px
+		background-color: $c-broun
+
+.rubl_big
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 20px
+		left: 0
+		width: 10px
+		height: 3px
+		background-color: $c-broun
+
+.rubl_30
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 25px
+		left: 0
+		width: 15px
+		height: 3px
+		background-color: $c-broun
+
+.rubl_black
+	&:after
+		background-color: #141313
+
+/* icon */
+.icon
+	display: inline-block
+	vertical-align: middle
+	position: relative
+.icon_phone
+	+sprite($s-phone)
+.icon_footer-call
+	+sprite($s-footer-call)
+.icon_footer-mail
+	+sprite($s-footer-mail)
+.icon_footer-adders
+	+sprite($s-footer-adders)
+.icon_twitter
+	+sprite($s-twitter)
+.icon_facebook
+	+sprite($s-facebook)
+.icon_google
+	+sprite($s-google)
+.icon_vkontakte
+	+sprite($s-vkontakte)
+.icon_cakes
+	+sprite($s-cakes)
+.icon_vk
+	+sprite($s-vk)
+.icon_fb
+	+sprite($s-fb)
+.icon_in
+	+sprite($s-in)
+.icon_gl
+	+sprite($s-gl)
+.icon_cake
+	+sprite($s-cake)
+.icon_weight
+	+sprite($s-weight)
+.icon_filling
+	+sprite($s-filling)
+.icon_order
+	+sprite($s-order)
+.icon_cap
+	+sprite($s-cap)
+.icon_fork
+	+sprite($s-fork)
+.icon_camera
+	+sprite($s-camera)
+.icon_b-left
+	+sprite($s-b-left)
+.icon_calc
+	+sprite($s-calc)
+.icon_author
+	+sprite($s-author)
+.icon_count
+	+sprite($s-count)
+.icon_search-vacancy
+	+sprite($s-search-vacancy)
+.icon_marker
+	+sprite($s-marker)
+.icon_star
+	+sprite($s-star)
+.icon_shop
+	+sprite($s-shop)
+.icon_people
+	+sprite($s-people)
+.icon_cakeabout
+	+sprite($s-cakeabout)
+.icon_man
+	+sprite($s-man)
+.icon_car
+	+sprite($s-car)
+.icon_persent
+	+sprite($s-persent)
+.icon_shop-w
+	+sprite($s-shop-w)
+/* end icon */
+
+// text
+%regular
+	font-family: "PTSansRegular", $helvetica
+
+.bold
+	font-family: "PTSansBold", $helvetica
+
+%c-broun
+	color: $c-broun
+// end text
+
+
+// BEGIN BUTTON 
+.button-container
+	text-align: center
+.button
+	text-decoration: none
+	@extend .bold
+	font-size: 14px
+	display: inline-block
+	vertical-align: middle
+	border-radius: 5px
+	cursor: pointer
+	border: 0
+.button_call
+	height: 38px
+	line-height: 36px
+	padding: 0 5.6%
+	color: #fff
+	background-color: $c-broun
+.button_broun_border
+	border-radius: 4px
+	border: 2px solid $c-broun
+	color: $c-broun
+
+.button_broun
+	height: 38px
+	line-height: 36px
+	border-radius: 4px
+	background-color: $c-broun
+	color: #fff
+
+.button_white
+	height: 38px
+	line-height: 36px
+	border-radius: 4px
+	color: $c-broun
+	background-color: #fff
+
+.button_still
+	height: 38px
+	line-height: 34px
+	padding: 0 7%
+	box-sizing: border-box
+.button_product
+	border-width: 3px
+	height: 38px
+	line-height: 31px
+	margin-top: 25px
+	padding: 0 6%
+	box-sizing: border-box
+// END BUTTON 
+
+
+// BEGIN INPUT 
+.textarea
+	border: 1px solid #d7d7d7
+	border-radius: 4px
+	width: 100%
+	box-sizing: border-box
+	resize: none
+	padding: 10px
+.select
+	height: 38px
+	line-height: 34px
+	border: 1px solid #d7d7d7
+	border-radius: 2px
+	&:after
+		border-color: $c-broun
+// END INPUT 
+
+// BEGIN H1-H6 
+.h2
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	text-transform: uppercase
+	text-align: center
+// END H1-H6 
+
+
+// BEGIN HR 
+.hr
+	color: #c2c2c2
+	background-color: #c2c2c2
+	height: 1px
+	border: 0 none
+// END HR 
+
+
+// BEGIN LOGO 
+.logo__link
+	display: block
+	+clearfix
+.logo__img-parent
+	max-width: 104px
+	float: left
+.logo-text
+	float: left
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	text-transform: uppercase
+	margin-left: 5.3%
+	border-left: 2px solid #e4e4e4
+	padding: 13px 0 9px 5.2%
+
+// END LOGO 
+
+// BEGIN PHONE 
+.phone
+	margin-top: 8px
+.phone__link
+	text-decoration: none
+.phone__text
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	line-height: 24px
+	border-left: 1px solid $c-broun
+	margin-top: 9px
+	display: inline-block
+	padding-left: 1.5%
+	margin-left: 2%
+.phone__button
+	vertical-align: top
+	margin-left: 4.7%
+.phone__icon
+	top: -3px
+// END PHONE 
+
+
+// BEGIN TOP-LINE 
+.top-line
+	padding-bottom: 8px
+.top-line__side_r
+	text-align: right
+
+// END TOP-LINE 
+
+// BEGIN TOP-MENU 
+.top-menu
+	background-color: $c-broun
+	padding: 10px 0 13px
+.top-menu__list
+	width: 100%
+	+clearfix
+.top-menu__item
+	float: left
+	width: 148.75/1190*100%
+	&:first-child
+		.top-menu__link
+			padding-left: 0
+			background-image: none
+	&:last-child
+		padding-right: 0
+		.top-menu__link
+			padding-right: 0
+.top-menu__link
+	color: #fff
+	display: block
+	//padding: 0 17.8%
+	white-space: nowrap
+	text-align: center
+	text-decoration: none
+	box-sizing: border-box
+	background-image: url(img/round.png)
+	background-repeat: no-repeat
+	background-position: left center
+// END TOP-MENU 
+
+// BEGIN HEADER 
+.header
+	padding-top: 12px
+	background-color: #fff
+	&+.container
+		position: relative
+// END HEADER 
+
+
+// BEGIN SIDEBAR 
+.sidebar
+	position: absolute
+	background-color: #fff
+	width: 24%
+	z-index: 20
+	border-radius: 0 0 5px 5px
+	padding-bottom: 7px
+	box-shadow: 0 5px 30px rgba(49,15,14,.15)
+	+transition(all .5s ease-in-out)
+	&.active
+		+transform(translateX(0))
+.sidebar-menu
+	padding: 15px 0
+	display: block
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		z-index: 1
+		height: 20px
+		opacity: .4
+		+linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.3))
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+		height: 20px
+		opacity: .5
+		+linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3))
+.sidebar-menu__link
+	@extend %c-broun
+	font-size: 18px
+	text-decoration: none
+	display: block
+	padding: 12px 30px
+	box-sizing: border-box
+
+.sidebar-menu__item_submenu
+	position: relative
+	.sidebar-menu__link
+		&:after
+			content: ''
+			position: absolute
+			top: 15px
+			right: 30px
+			width: 10px
+			height: 10px
+			border-left: 2px solid #531d1b
+			border-bottom: 2px solid #531d1b
+			+transform(rotate(-45deg))
+			+transition(all .5s ease-in-out)
+	&.active
+		background-color: #fbf4f4
+		.sidebar-menu__link
+			color: #0e0d0d
+			@extend .bold
+			&:after
+				top: 19px
+				+transform(rotate(135deg))
+		.sidebar-submenu
+			display: block
+
+
+.sidebar-submenu
+	display: none
+	padding: 0 0 20px
+
+.sidebar-submenu__link
+	color: #531d1b
+	text-decoration: none
+	font-size: 16px
+	padding: 5px 0 5px 45px
+	display: block
+.sidebar-subsubmenu__link
+	color: #531d1b
+	padding: 5px 0 5px 50px
+	text-decoration: none
+	display: block
+.sidebar-banner
+	background-image: url(img/sidebar-banner.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	color: #fff
+.sidebar-banner__link
+	display: block
+	color: #fff
+.sidebar-banner__content
+	padding: 20px 145px 40px 35px
+	text-align: center
+.sidebar-banner__icon
+	display: block
+	margin: 0 auto
+.sidebar-banner__text
+	display: block
+	margin-top: 10px
+	@extend .bold
+	font-size: 18px
+
+.subscription
+	padding: 23px 33px
+.subscription__text
+	@extend %c-broun
+	@extend .bold
+	font-size: 18px
+	line-height: 20px
+.subscription__form
+	margin-top: 15px
+.subscription__line
+	margin-bottom: 10px
+.subscription__input
+	width: 100%
+	height: 38px
+	box-sizing: border-box
+	border: 2px solid #b7b7b7
+	border-radius: 4px
+	padding: 0 10px
+.subscription__button
+	width: 100%
+	height: 38px
+	background-color: $c-broun
+	color: #fff
+.subscription-social
+	margin-top: 14px
+	text-align: center
+.subscription-social__item
+	display: inline-block
+	margin-left: 0
+	&:first-child
+		margin-left: 0
+// END SIDEBAR 
+
+
+// BEGIN FOOTER 
+.footer
+	padding: 30px 0
+	background-color: $c-broun
+	+clearfix
+	+transition(all .5s ease-in-out)
+	&.active
+		+transform(translateX(-250px))
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 2
+			background-color: rgba(0,0,0,.5)
+.footer-block
+	float: left
+	width: 19%
+	color: #fff
+.footer-block__contact
+	width: 24%
+	border-left: 1px solid #fff
+	padding-left: 4%
+	box-sizing: border-box
+.footer-block__title
+	@extend .bold
+.footer-block__list
+	padding-left: 7px
+.footer-block__item
+	margin: 7px 0
+.footer-block__link
+	color: inherit
+	text-decoration: none
+.footer-contact__item
+	margin: 0 0 17px
+.footer-contact__link
+	display: block
+	+clearfix
+	color: inherit
+.footer-contact__icon
+	display: block
+	float: left
+	width: 8%
+.footer-contact__text
+	display: block
+	margin-left: 3%
+	float: left
+	width: 89%
+	@extend .bold
+.footer-social
+	margin-top: 30px
+.footer-social__item
+	margin: 7px 0 0 8px
+	display: inline-block
+	&:first-child
+		margin-left: 0
+// END FOOTER 
+
+
+// BEGIN MAIN-BANNER 
+.main-banner-wrapper
+	position: relative
+.main-banner__content
+	padding: 50px 3.7%
+	box-sizing: border-box
+.main-banner__item
+	background-image: url(img/main-banner1.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 358px
+.main-banner__title
+	@extend %c-broun
+	@extend .bold
+	font-size: 30px
+	text-transform: uppercase
+.main-banner__text
+	margin: 15px 0 25px
+	width: 55%
+	font-size: 18px
+	color: #1c1918
+.main-banner__button
+	margin-top: 7px
+	height: 38px
+	padding: 0 40px
+	line-height: 34px
+	box-sizing: border-box
+// END MAIN-BANNER 
+
+// BEGIN COLUMNS 
+.col-4
+	margin: 15px 0
+	float: left
+	width: 570/870*100%
+.col-2
+	margin: 15px 0
+	float: left
+	width: 270/870*100%
+.col-2-m
+	&:nth-child(3n-1)
+		margin-left: 30/870*100%
+		margin-right: 30/870*100%
+.col-3
+	margin: 15px 0
+	float: left
+	width: 420/870*100%
+.col-3-m
+	&:nth-child(2n-1)
+		margin-right: 30/870*100%
+.col_m_r
+	margin-right: 30/870*100%
+// END COLUMNS 
+
+// BEGIN MAIN-CAKES 
+.main-cakes
+	padding: 48px 0 20px
+	+clearfix
+.main-cakes__title
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	text-transform: uppercase
+	text-align: center
+.main-cakes__colums
+	margin-top: 8px
+
+.main-cakes-item
+	border: 1px solid #d7d7d7
+	border-radius: 4px
+	background-color: #fff
+.main-cakes-item__link
+	text-decoration: none
+	display: block
+	color: inherit
+.main-cakes-item__preview
+	background-image: url(img/item-banner.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	min-height: 170px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+		height: 10%
+		+linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3))
+.main-cakes-item__price
+	position: absolute
+	top: 7px
+	right: 7px
+	border-radius: 3px
+	background-color: rgba(255,255,255,.7)
+	@extend %c-broun
+	@extend .bold
+	font-size: 18px
+	padding: 4px 17px
+	box-sizing: border-box
+.main-cakes-item__description
+	padding: 23px 30px 27px
+.main-cakes-item__title
+	@extend %c-broun
+	@extend .bold
+	font-size: 18px
+	text-decoration: underline
+.main-cakes-item__text
+	margin-top: 10px
+	line-height: 18px
+.main-cakes-item-mini
+	float: left
+	width: 47.5%
+	margin-left: 5%
+	border-radius: 4px
+	overflow: hidden
+	box-sizing: border-box
+	&:first-child
+		margin-left: 0
+.main-cakes-item-mini_m_t
+	margin-top: 30px
+.main-cakes-item-mini_m_b
+	margin-bottom: 30px
+.main-cakes-item-mini__content
+	width: 100%
+	padding-bottom: 100%
+	overflow: hidden
+	position: relative
+	background-image: url(img/item-banner1.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+		height: 30%
+		+linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6))
+.main-cakes-item-mini__link
+	display: block
+	color: inherit
+.main-cakes-item-mini__text
+	position: absolute
+	bottom: 5px
+	z-index: 2
+	padding: 0 10px
+	box-sizing: border-box
+	color: #fff
+	@extend .bold
+	text-decoration: underline
+// END MAIN-CAKES 
+
+// BEGIN MAIN-PRODUCTION 
+.main-production
+	padding: 18px 0 62px
+.main-production__title
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	text-transform: uppercase
+	text-align: center
+.main-production__colums
+	margin-top: 25px
+.main-production__item
+	float: left
+	width: 270/870*100%
+	margin-left: 30/870*100%
+	border-radius: 5px
+	overflow: hidden
+	&:first-child
+		margin-left: 0
+.main-production__content
+	width: 100%
+	padding-bottom: 100%
+	position: relative
+	overflow: hidden
+	background-image: url(img/tort.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	&:hover
+		.main-production__hover
+			+transform(translateY(0))
+			.main-production__text
+				display: block
+.main-production__hover
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	padding: 20px 0 0
+	color: #fff
+	box-sizing: border-box
+	background-color: rgba(0,0,0,.6)
+	+transform(translateY(75%))
+	+transition(all .5s ease-in-out)
+.main-production__subtitle
+	@extend .bold
+	font-size: 24px
+	text-align: center
+.main-production__text
+	text-align: center
+	margin-top: 20px
+	display: none
+.main-production__link
+	color: inherit
+	text-decoration: none
+	display: inline-block
+	margin: 3px 0
+	&:hover
+		@extend .bold
+.main-production__link_all
+	text-decoration: underline
+	@extend .bold
+	&:hover
+		text-decoration: none
+// END MAIN-PRODUCTION 
+
+
+// BEGIN MAIN-ABOUT 
+.main-about
+	background-color: #da8fa3
+	background-image: url(img/main-about.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	padding: 85px 0 95px
+	box-sizing: border-box
+	color: #fff
+.main-about__title
+	@extend .bold
+	font-size: 24px
+	color: #fff
+	text-transform: uppercase
+.main-about__text
+	width: 50%
+	margin-top: 20px
+	font-size: 18px
+// END MAIN-ABOUT 
+
+// BEGIN SOCIAL 
+.social
+	padding: 60px 0 56px
+.vk
+	float: left
+	width: 50%
+	padding-right: 1.7%
+	box-sizing: border-box
+.fb
+	width: 50%
+	float: left
+	padding-left: 1.7%
+	box-sizing: border-box
+// END SOCIAL 
+
+
+
+// BEGIN HAMBURGER 
+.side_hamburger
+	width: 10%
+	float: right
+	text-align: right
+	display: none
+.hamburger
+	margin-top: 15px
+	width: 25px
+	height: 17px
+	position: relative
+	display: inline-block
+	&.active
+		.hamburger__line_1
+			width: 15px
+			+transform(rotate(45deg) translateX(10px) translateY(-6px))
+		.hamburger__line_3
+			width: 15px
+			+transform(rotate(-45deg) translateX(9px) translateY(7px))
+.hamburger__line
+	position: absolute
+	left: 0
+	right: 0
+	width: 100%
+	height: 2px
+	background-color: $c-broun
+	+transition(all .5s ease-in-out)
+.hamburger__line_1
+	top: 0
+.hamburger__line_2
+	top: 50%
+	+transform(translateY(-50%))
+.hamburger__line_3
+	bottom: 0
+// END HAMBURGER 
+
+// BEGIN FOOTER-HAMBURGER 
+.footer-hamburger
+	text-align: center
+	margin-bottom: 10px
+	display: none
+	&.active
+		.footer-hamburger__text
+			&:after
+				top: 9px
+				+transform(rotate(135deg))
+.footer-hamburger__text
+	cursor: pointer
+	position: relative
+	color: #fff
+	&:after
+		content: ''
+		position: absolute
+		top: 6px
+		right: -12px
+		width: 5px
+		height: 5px
+		border-left: 1px solid #fff
+		border-bottom: 1px solid #fff
+		+transform(rotate(-45deg))
+		+transition(all .5s aese-in-out)
+
+.footer-blocks
+	&.active
+		display: block
+// END FOOTER-HAMBURGER 
+
+
+// BEGIN DOTS-CONTAINER 
+.dots-container
+	position: absolute
+	bottom: 20px
+	left: 0
+	right: 0
+	z-index: 20
+// END DOTS-CONTAINER 
+
+// BEGIN OWL-DOT 
+.owl-dot
+	+size(16px)
+	display: inline-block
+	margin: 10px
+	border: 1px solid transparent
+	border-radius: 50%
+	&.active
+		border-color: $c-broun
+	span
+		+size(10px)
+		background-color: $c-broun
+		border-radius: 50%
+		display: block
+		margin: 3px auto
+// END OWL-DOT 
+
+
+// BEGIN TITLE 
+.title
+	padding: 49px 0 20px
+.title__text
+	@extend %c-broun
+	@extend .bold
+	font-size: 30px
+	text-transform: uppercase
+
+// END TITLE 
+
+
+// BEGIN DESCRIPTION 
+.description
+	margin-top: 24px
+	padding-bottom: 30px
+.description__title
+	font-size: 24px
+	line-height: 30px
+	text-align: center
+.description__title_bold
+	@extend .bold
+.description__subtitle
+	font-size: 18px
+	line-height: 30px
+	text-align: center
+	@extend %c-broun
+.description__text
+	margin-top: 25px
+	text-align: center
+// END DESCRIPTION 
+
+// BEGIN SECTION-SLIDER 
+.section-slider
+	margin-top: 28px
+.slider__item
+	background-image: url(img/cake-order.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	padding: 73px 0 90px
+.slider__item_product
+	background-image: url(img/product-finished.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	padding: 46px 0 50px
+.slider__text
+	font-size: 18px
+	width: 60%
+.slider__text_product
+	margin-top: 20px
+	font-size: 14px
+	width: 40%
+.slider__title
+	font-size: 24px
+	line-height: 24px
+	@extend .bold
+	width: 40%
+// END SECTION-SLIDER 
+
+
+// BEGIN ORDER-STAGE 
+.order-stage
+	padding: 52px 0 56px
+.order-stage__title
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	text-transform: uppercase
+	text-align: center
+.order-stage__items
+	margin-top: 10px
+	position: relative
+	+clearfix
+.order-stage__line
+	position: absolute
+	width: 80%
+	height: 5px
+	background-color: #e6e2e3
+	top: 50%
+	left: 50%
+	z-index: 1
+	+transform(translateY(-50%) translateX(-50%))
+.order-stage__item
+	float: left
+	width: 25%
+	text-align: center
+.order-stage__round
+	width: 70%
+	margin: 15px auto 0
+.order-stage__round-content
+	width: 100%
+	padding-bottom: 100%
+	background-color: #e6e2e3
+	border-radius: 50%
+	position: relative
+	border: 5px solid #f2f2f2
+	z-index: 2
+.order-stage__icon
+	position: absolute
+	top: 50%
+	left: 50%
+	+transform(translateY(-50%) translateX(-50%))
+.order-stage__text
+	@extend .bold
+	padding: 0 10%
+	font-size: 18px
+.order-stage__link
+	@extend %c-broun
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+// END ORDER-STAGE 
+
+// BEGIN CAKE-BY-SKETCH 
+.cake-by-sketch__content
+	background-color: #fff
+	border: 1px solid #d7d7d7
+	border-radius: 4px
+	padding: 30px 0
+	text-align: center
+.cake-by-sketch__icon
+	display: block
+	margin: 0 auto
+.cake-by-sketch__text
+	margin-top: 20px
+	@extend .bold
+	font-size: 18px
+	text-transform: uppercase
+	text-align: center
+.cake-by-sketch__button
+	margin-top: 18px
+	padding: 0 60px
+// END CAKE-BY-SKETCH 
+
+// BEGIN CAKE-ORDER-TWO 
+.cake-order-two
+	padding: 52px 0 50px
+.cake-order-two__title
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	text-transform: uppercase
+	text-align: center
+.cake-order-two__colums
+	margin-top: 10px
+
+.cake-order-two-item
+	border: 1px solid #d7d7d7
+	border-radius: 4px
+	background-color: #fff
+	overflow: hidden
+.cake-order-two-item__link
+	text-decoration: none
+	display: block
+	color: inherit
+.cake-order-two-item__preview
+	background-image: url(img/item-banner.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	min-height: 170px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+		height: 10%
+		+linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3))
+
+.cake-order-two-item__description
+	padding: 15px 30px 27px
+.cake-order-two-item__title
+	+clearfix
+.cake-order-two-item__price
+	width: 30%
+	float: left
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	box-sizing: border-box
+	text-align: right
+.cake-order-two-item__title-text
+	width: 70%
+	float: left
+	@extend %c-broun
+	@extend .bold
+	font-size: 18px
+	text-decoration: underline
+	padding-top: 8px
+.cake-order-two-item__text
+	margin-top: 10px
+	line-height: 18px
+// END CAKE-ORDER-TWO 
+
+
+// BEGIN CAKE-FILLING 
+.cake-filling
+	padding-top: 50px
+.cake-filling__list
+	+clearfix
+.cake-filling__item
+	float: left
+	width: 20%
+	text-align: center
+	margin: 15px 0 20px
+.cake-filling__preview
+	border-radius: 50%
+.cake-filling__name
+	@extend .bold
+	font-size: 18px
+// END CAKE-FILLING 
+
+// BEGIN REVIEWS 
+.reviews
+	padding: 25px 0
+.reviews_ptn
+	padding-top: 0
+.reviews__hr
+	margin-top: 20px
+.reviews__form
+	margin-top: 30px
+.reviews__button
+	margin-top: 15px
+	padding: 0 7.5%
+	box-sizing: border-box
+// END REVIEWS 
+
+// BEGIN THREE-COLUMS 
+.three-colums
+	padding-top: 40px
+// END THREE-COLUMS 
+
+// BEGIN CAKE-CARD 
+.cake-card__preview
+	background-image: url(img/cake-card-banner.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	min-height: 201px
+	border-top: 1px solid #d7d7d7
+	border-left: 1px solid #d7d7d7
+	border-right: 1px solid #d7d7d7
+	border-radius: 3px 3px 0 0
+	box-sizing: border-box
+.cake-card__link
+	display: block
+	text-decoration: none
+	color: inherit
+.cake-card__title
+	margin-top: 10px
+	@extend %c-broun
+	@extend .bold
+	font-size: 18px
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.cake-card__title_tdn
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+.cake-card__btn-price
+	margin-top: 15px
+	+clearfix
+.cake-card__btn
+	float: left
+	width: 51%
+.cake-card__btn_big
+	width: 65%
+.cake-card__button
+	width: 100%
+	text-align: center
+.cake-card__price
+	padding-top: 5px
+	float: left
+	width: 49%
+	text-align: right
+	@extend %c-broun
+	@extend .bold
+.cake-card__price_small
+	width: 35%
+.card-price
+	font-size: 18px
+// END CAKE-CARD 
+
+// BEGIN BTN-STILL 
+.btn-still
+	padding: 42px 0
+	text-align: center
+.btn-still__text
+	position: relative
+	padding-right: 20px
+	&:after
+		content: ''
+		position: absolute
+		top: 3px
+		right: 0
+		+size(10px)
+		border-right: 2px solid $c-broun
+		border-bottom: 2px solid $c-broun
+		+transform(rotate(45deg))
+		box-sizing: border-box
+// END BTN-STILL 
+
+// BEGIN CONTENT 
+.content
+	padding-bottom: 50px
+.content__text
+	margin-top: 40px
+	text-align: center
+	font-size: 18px
+// END CONTENT 
+
+
+// BEGIN TITLE-PRICE 
+.title-price
+	+clearfix
+.title-price__side
+	float: left
+.title-price__side_l
+	width: 70%
+.title-price__side_r
+	width: 30%
+	text-align: right
+.top__price
+	padding: 49px 0 0
+	@extend .bold
+	font-size: 18px
+.title__price-number
+	font-size: 30px
+// END TITLE-PRICE 
+
+
+
+
+// BEGIN FILTER 
+.filter
+	margin-top: 10px
+	background-color: #fff
+	border: 1px solid #d7d7d7
+	border-radius: 4px
+	padding: 15px 20px 13px
+	box-sizing: border-box
+	+clearfix
+.filter__list
+	float: left
+	width: 80%
+	padding-top: 7px
+	+clearfix
+.filter__item
+	float: left
+.filter__link
+	font-size: 12px
+	line-height: 12px
+	@extend %c-broun
+	text-decoration: none
+	padding: 0 13px
+	box-sizing: border-box
+	&.active
+		@extend .bold
+		color: #141313
+.filter__still
+	float: left
+	width: 20%
+.filter__button
+	text-align: center
+	width: 100%
+// END FILTER 
+
+
+
+// BEGIN ORDER-TOP 
+.order-top
+	padding: 20px 0
+.order-top__side
+	float: left
+.order-top__side_m
+	padding-top: 45px
+	padding-left: 30px
+.order-top__title
+	@extend %c-broun
+	@extend .bold
+	font-size: 24px
+	line-height: 24px
+.order-top__price
+	margin-top: 10px
+	@extend .bold
+	font-size: 18px
+.order-top__side_r
+	padding-top: 55px
+	padding-left: 35px
+.order-top__button
+	background-color: #fff
+	height: 38px
+	line-height: 32px
+	padding: 0 50px
+	box-sizing: border-box
+// END ORDER-TOP 
+
+// BEGIN ORDER-TITLE 
+.order-title
+	font-size: 18px
+	@extend %c-broun
+	@extend .bold
+	text-align: center
+// END ORDER-TITLE 
+
+// BEGIN ORDER-ADD-FILE 
+.order-add-file
+	border-top: 1px solid #dddddd
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	padding: 25px 0 30px
+	box-sizing: border-box
+	position: relative
+
+.file-upload
+	position: relative
+	overflow: hidden
+	font-size: 13px
+	height: 40px
+	width: 350px
+	margin: 20px auto 0
+
+.file-upload__button
+	float: left
+	width: 155px
+	height: 40px
+	color: #fff
+	background-color: #a7a7a7
+	border: 0
+	border-radius: 5px
+	@extend .bold
+.file-upload__text
+	display: inline-block
+	margin-left: 10px
+	margin-top: 10px
+	color: #a7a7a7
+.file-upload__file
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	letter-spacing: 0
+	opacity: 0
+	cursor: pointer
+	font-size: 0
+	line-height: 0
+	display: block
+// END ORDER-ADD-FILE 
+
+
+%order-bg-gradient
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 20px
+		+linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.05))
+
+// BEGIN ORDER-TEXT 
+.order-text
+	padding: 25px 0 30px
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	@extend %order-bg-gradient
+.form-control
+	width: 45%
+	margin: 0 auto
+.order__input
+	height: 38px
+	width: 100%
+	padding: 0 10px
+	margin-top: 12px
+	box-sizing: border-box
+// END ORDER-TEXT 
+
+// BEGIN ORDER-WEIGHT 
+.order-weight
+	padding: 25px 0 30px
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	@extend %order-bg-gradient
+	text-align: center
+.order__round-radio
+	margin-top: 10px
+	text-align: center
+.order__control
+	display: inline-block
+	margin-left: 30px
+	vertical-align: middle
+	&:first-child
+		margin-left: 0
+.order__radio
+	display: none
+	& +.order__label
+		border: 1px solid #d7d7d7
+		display: block
+		border-radius: 50%
+		+size(55px)
+		line-height: 55px
+		cursor: pointer
+		@extend %c-broun
+	& +.order__label_big
+		line-height: 1
+		font-size: 12px
+		padding-top: 35px
+		box-sizing: border-box
+		+size(100px)
+		vertical-align: middle
+	& +.order__label_one_line
+		padding-top: 42px
+	& +.order__label_add
+		border: 1px dashed #d7d7d7
+		color: #b3b2b2
+	&:checked
+		& +.order__label
+			@extend .bold
+			border: 2px solid $c-broun
+.order-weight__calculation
+	margin-top: 20px
+.calculation__input
+	width: 50px
+	height: 38px
+	padding: 0 10px
+	box-sizing: border-box
+.calculation__icon
+	margin: 0 10px
+.order-weight__count
+	margin-left: 10px
+	font-size: 18px
+.order-delyvery__line
+	width: 40%
+	margin: 0 auto
+	+clearfix
+.order-delyvery__control
+	float: left
+	width: 50%
+	padding: 0 10px
+	box-sizing: border-box
+	text-align: left
+.order-delyvery__label
+	width: 100%
+	display: inline-block
+	text-align: left
+	@extend %c-broun
+.order-delyvery__input
+	margin-top: 10px
+	display: inline-block
+	height: 38px
+	width: 100%
+	border-radius: 2px
+	box-sizing: border-box
+	border: 1px solid #d7d7d7
+.order-delyvery__input_time
+	width: 60px
+	margin: 10px 5px 0
+// END ORDER-WEIGHT 
+
+
+// BEGIN ORDER-LONGLINES 
+.order-longlines
+	padding: 25px 0 30px
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	@extend %order-bg-gradient
+.order__stand
+	margin-top: 15px
+	text-align: center
+.oreder__checkbox
+	display: none
+	& +.label_stand
+		cursor: pointer
+		@extend %c-broun
+		&:before
+			content: ''
+			position: relative
+			top: -2px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 3px
+			@extend .icon
+			+sprite($s-checkbox)
+	&:checked
+		& +.label_stand
+			&:before
+				+sprite($s-checkbox_check)
+// END ORDER-LONGLINES 
+
+// BEGIN ORDER-FORM 
+.order-form
+	padding: 25px 0 30px
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	@extend %order-bg-gradient
+.order__round-radio_form
+	margin-top: 15px
+	padding-bottom: 30px
+.order__form
+	display: none
+	&.order__form_standart
+		& +.order__label
+			border: 1px solid #d7d7d7
+			display: block
+			border-radius: 50%
+			padding-top: 40px
+			+size(100px)
+			cursor: pointer
+			@extend %c-broun
+			box-sizing: border-box
+			font-size: 12px
+	&.order__form_nostandart
+		& +.order__label
+			position: relative
+			font-size: 12px
+			@extend %c-broun
+			&:before
+				content: ''
+				position: absolute
+				background-image: url(img/nostandart.png)
+				background-repeat: no-repeat
+				top: -35px
+				left: -18px
+				+size(114px 100px)
+
+
+	&.order__form_square
+		& +.order__label
+			border: 1px solid #d7d7d7
+			display: block
+			padding-top: 40px
+			+size(100px)
+			cursor: pointer
+			@extend %c-broun
+			box-sizing: border-box
+			font-size: 12px
+	&.order__form_rectangular
+		& +.order__label
+			border: 1px solid #d7d7d7
+			display: block
+			padding-top: 40px
+			+size(130px 100px)
+			cursor: pointer
+			@extend %c-broun
+			box-sizing: border-box
+			font-size: 12px
+	&:checked
+		&.order__form_standart,
+		&.order__form_square,
+		&.order__form_rectangular
+			& +.order__label
+				border-color: $c-broun
+				border-width: 2px
+				@extend .bold
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					bottom: -33px
+					left: 50%
+					+transform(translateX(-50%))
+					border: 20px solid transparent
+					border-bottom-color: #fbf4f4
+					border-top: 0
+		&.order__form_nostandart
+			& +.order__label
+				@extend .bold
+				&:before
+					background-image: url(img/nostandart-check.png)
+				&:after
+					content: ''
+					position: absolute
+					bottom: -73px
+					left: 50%
+					+transform(translateX(-50%))
+					border: 20px solid transparent
+					border-bottom-color: #fbf4f4
+					border-top: 0
+.order-form__text
+	margin-top: 30px
+	text-align: center
+.order-form__link
+	@extend %c-broun
+	@extend .bold
+// END ORDER-FORM 
+
+
+// BEGIN ORDER-FORM-TYPE 
+.order-form-type
+	background-color: #fbf4f4
+	position: relative
+	&:after,
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 2000em
+		background-color: #fbf4f4
+	&:after
+		left: 100%
+	&:before
+		right: 100%
+.order-form-type__close
+	position: absolute
+	top: 50%
+	+transform(translateY(-50%))
+	right: 0
+	font-size: 25px
+	@extend %c-broun
+	cursor: pointer
+.order-form-type__item
+	display: inline-block
+	padding: 30px 0
+	margin-left: 2%
+.order__form-type
+	display: none
+	& +.order__label
+		border: 1px solid $c-broun
+		display: block
+		border-radius: 20px
+		cursor: pointer
+		padding: 7px 15px
+		@extend %c-broun
+		box-sizing: border-box
+		font-size: 12px
+	&:checked
+		& +.order__label
+			border-width: 2px
+// END ORDER-FORM-TYPE 
+
+
+
+// BEGIN ORDER-DELYVERY 
+.order-delyvery
+	padding: 25px 0 30px
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	@extend %order-bg-gradient
+	text-align: center
+.order-delyvery__tabs-nav
+	margin-top: 15px
+	display: inline-block
+	border-radius: 3px
+	border: 1px solid $c-broun
+	+clearfix
+.order-delyvery__tab-nav
+	float: left
+	padding: 10px 20px
+	@extend %c-broun
+	cursor: pointer
+	&.active
+		@extend .bold
+		background-color: $c-broun
+		color: #fff
+.order-delyvery__tabs
+	margin-top: 25px
+	text-align: center
+.order-delyvery__tab
+	display: none
+	&.active
+		display: block
+.order-delyvery__select-container
+	width: 300px
+	margin: 0 auto
+	+clearfix
+
+.order-delyvery__select
+	margin: 0 auto
+// END ORDER-DELYVERY 
+
+
+
+// BEGIN ORDER-CHECK 
+.order-check
+	padding: 25px 0 30px
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	@extend %order-bg-gradient
+.order-check__sides
+	width: 80%
+	margin: 0 auto
+.order-check__side
+	float: left
+.order-check__side_l
+	width: 60%
+.order-check__side_r
+	width: 40%
+.order-check__line
+	border-bottom: 2px dotted #251f1f
+	margin-top: 10px
+	+clearfix
+.order-check__name
+	float: left
+	background-color: #fff
+	position: relative
+	top: 8px
+.order-check__price
+	float: right
+	background-color: #fff
+	font-size: 18px
+	@extend .bold
+	position: relative
+	top: 4px
+// END ORDER-CHECK 
+
+// BEGIN PROVISIONAL-PRICE 
+.provisional-price
+	margin-top: 15px
+	background-color: #fbf4f4
+	border-radius: 2px
+	width: 60%
+	margin-left: 10%
+	padding: 10px 30px
+	box-sizing: border-box
+.provisional-price__text
+	line-height: 16px
+.provisional-price__price
+	text-align: right
+	margin-top: 5px
+	font-size: 24px
+	@extend %c-broun
+	@extend .bold
+// END PROVISIONAL-PRICE 
+
+// BEGIN ORDER-CONTACT 
+.order-contact
+	padding: 25px 0 30px
+	border-bottom: 1px solid #dddddd
+	background-color: #fff
+	margin-bottom: 40px
+	@extend %order-bg-gradient
+.order-contact__line
+	width: 30%
+	margin: 15px auto
+.order-contact__input
+	width: 100%
+	height: 38px
+	padding: 0 10px
+	border-radius: 2px
+	border: 1px solid #d7d7d7
+	box-sizing: border-box
+.order-contact__select
+	float: none
+.order-contact__button
+	width: 100%
+// END ORDER-CONTACT 
+
+// BEGIN ACTION 
+.action
+	background-position: center top
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 15px 0
+	margin-bottom: 1px
+	&.action_left
+		.action__name
+			text-align: right
+	&.action_right
+		.action__name
+			text-align: left
+		.action__content
+			margin-left: 50%
+.action__content
+	width: 50%
+.action__name-text
+	display: inline-block
+	background-color: rgba(255,255,255,.7)
+	border-radius: 3px
+	font-size: 18px
+	@extend %c-broun
+	@extend .bold
+	line-height: 30px
+	padding: 0 30px
+
+.action__title
+	margin-top: 15px
+	font-size: 18px
+	line-height: 24px
+	text-transform: uppercase
+	@extend .bold
+	color: #fff
+
+.action__button
+	margin-top: 27px
+	padding: 0 50px
+
+.action__footnote
+	margin-top: 58px
+	font-size: 12px
+	color: #fff
+
+// END ACTION 
+
+
+// BEGIN CONTACT 
+.top-contact
+	position: relative
+.top-contact__content
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	z-index: 5
+	+linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,1) 70%)
+
+.contact-map
+	height: 360px
+
+.contact
+	padding: 35px 0 80px
+
+.contact__title
+	font-size: 18px
+	@extend %c-broun
+	@extend .bold
+	text-transform: uppercase
+.contact__addres
+	margin-top: 25px
+	font-size: 18px
+
+.contact__phone-title,
+.contact__email-title
+	margin-top: 25px
+.contact__phone,
+.contact__email
+	margin-top: 10px
+.contact__phone-link
+	font-size: 18px
+	@extend .bold
+	color: inherit
+	text-decoration: none
+.contact__email-link
+	font-size: 18px
+	@extend %c-broun
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.contact__text
+	margin-top: 25px
+// END CONTACT 
+
+
+// BEGIN PRODUCTION-BANNER 
+.production-banner
+	background-image: url(img/production-banner.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	height: 300px
+// END PRODUCTION-BANNER 
+
+// BEGIN WORKSHOP 
+.workshop
+	padding: 30px 0 60px
+
+.col-w1
+	float: left
+	width: 350/870*100%
+	margin-right: 10/870*100%
+.col-w2
+	float: left
+	width: 270/870*100%
+	margin-right: 10/870*100%
+.col-w3
+	float: left
+	width: 230/870*100%
+
+.workshop__card
+	width: 100%
+	border: 1px solid #d7d7d7
+	border-radius: 4px
+	overflow: hidden
+	box-sizing: border-box
+.workshop__card_line_2
+	.workshop__preview
+		height: 210px
+.workshop__card_line_1
+	.workshop__preview
+		height: 100px
+.workshop__link
+	display: block
+	text-decoration: none
+	&:hover
+		.workshop__title
+			text-decoration: none
+
+.workshop__preview
+	background-image: url(img/workshop1.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 1
+		height: 30%
+		+linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1))
+
+.workshop__title
+	position: absolute
+	bottom: 15px
+	left: 15px
+	color: #fff
+	z-index: 2
+	@extend .bold
+	text-decoration: underline
+
+.col-w-line
+	+clearfix
+	&:first-child
+		margin-bottom: 8px
+.col-w50
+	float: left
+	width: 50%
+	box-sizing: border-box
+.col-w50_l
+	padding-right: 5px
+.col-w50_r
+	padding-left: 5px
+// END WORKSHOP 
+
+
+
+// BEGIN EXCURSION-BANNER 
+.excursion-banner
+	background-color: #fff
+	border: 1px solid #d7d7d7
+	border-radius: 3px
+	padding: 25px 28px 30px
+	margin-bottom: 60px
+	overflow: hidden
+.excursion-banner__description
+	float: left
+	width: 70%
+.excursion-banner__image
+	float: left
+	width: 30%
+	text-align: center
+	padding-top: 42px
+.excursion-banner__title
+	font-size: 18px
+	@extend .bold
+	text-transform: uppercase
+.excursion-banner__text
+	margin-top: 20px
+	line-height: 20px
+.excursion-banner__link
+	margin-top: 20px
+	display: inline-block
+	text-decoration: none
+	@extend .bold
+	@extend %c-broun
+	&:hover
+		text-decoration: underline
+.excursion-banner__left
+	margin-left: 7px
+// END EXCURSION-BANNER 
+
+
+// BEGIN EXCURSION-PHOTO 
+.excursion-photo__img
+	border-radius: 4px
+	overflow: hidden
+// END EXCURSION-PHOTO 
+
+// BEGIN REQUEST-EXCURSION 
+.request-excursion
+	padding: 25px 0 30px
+.request-excursion__title
+	@extend .bold
+	@extend %c-broun
+	font-size: 18px
+.request-excursion__form
+	margin-top: 10px
+	+clearfix
+.request-excursion__control
+	float: left
+	width: 180/870*100%
+	margin-left: 15/870*100%
+	position: relative
+	&:first-child
+		margin-left: 0
+.request-excursion__control_50
+	width: 90/870*100%
+.request-excursion__input
+	border-radius: 2px
+	border: 1px solid #d7d7d7
+	width: 100%
+	height: 38px
+	padding: 0 10px
+	box-sizing: border-box
+.request-excursion__select
+	height: 38px
+	line-height: 34px
+	font-size: 14px
+	border-radius: 2px
+	border: 1px solid #d7d7d7
+	box-sizing: border-box
+	&:after
+		border-color: $c-broun
+.request-excursion__button
+	width: 100%
+.request-excursion__label
+	position: absolute
+	top: -30px
+	@extend %c-broun
+	min-width: 100px
+// END REQUEST-EXCURSION 
+
+
+// BEGIN EXCURSION-TEXT 
+.excursion-text
+	padding: 25px 0 30px
+	border-top: 1px solid #dddddd
+	text-align: center
+	@extend %order-bg-gradient
+// END EXCURSION-TEXT 
+
+
+
+// BEGIN BLOG-CARD 
+.blog-card
+	border: 1px solid #d7d7d7
+	border-radius: 4px
+	overflow: hidden
+	background-color: #fff
+	margin-bottom: 50px
+
+.blog-card__top-line
+	background-color: #fbf4f4
+	padding: 10px 30px 15px
+	box-sizing: border-box
+
+.blog-card__author
+	float: left
+	width: 11%
+	padding-top: 10px
+.blog-card__img
+	border-radius: 50%
+.blog-card__description
+	float: left
+	width: 89%
+.blog-card__title
+	@extend .bold
+	@extend %c-broun
+	font-size: 24px
+	text-decoration: underline
+.blog-card__infos
+	margin-top: 25px
+.blog-card__icon
+	vertical-align: top
+	margin-right: 7px
+.blog-card__info
+	margin-left: 45px
+	&:first-child
+		margin-left: 0
+.blog-card__content
+	padding: 25px 30px
+	box-sizing: border-box
+.blog-card__text
+	float: left
+	width: 65%
+.blog-card__p
+	margin-bottom: 25px
+.blog-card__preview
+	float: left
+	width: 35%
+.blog-card__button
+	height: 38px
+	line-height: 30px
+	border-width: 3px
+	padding: 0 50px
+	box-sizing: border-box
+// END BLOG-CARD 
+
+
+
+// BEGIN RESUME-BLOCK 
+.resume-block
+	padding: 25px 0
+
+.resume__title
+	font-size: 18px
+	@extend .bold
+	@extend %c-broun
+
+.resume__subtitle
+	margin-top: 25px
+	@extend .bold
+.resume__text
+	margin: 10px 0
+.resume-block__side
+	float: left
+.resume-block__side_l
+	width: 35%
+	padding-right: 5%
+	box-sizing: border-box
+.resume-block__side_r
+	width: 65%
+
+.resume-block__photos
+	margin-top: 23px
+	+clearfix
+.resume-block__photo
+	float: left
+	width: 50%
+	box-sizing: border-box
+.resume-block__photo_l
+	padding-right: 7.5/560*100%
+.resume-block__photo_r
+	padding-left: 7.5/560*100%
+// END RESUME-BLOCK 
+
+
+// BEGIN RESUME-FORM 
+.resume-form__title
+	text-align: center
+.resume-form__line
+	width: 100%
+
+	margin: 15px 0
+
+.resume-form__input
+	width: 100%
+	height: 38px
+	padding: 0 10px
+	border-radius: 1px
+	box-sizing: border-box
+	border: 1px solid #d7d7d7
+.resume-form__select
+	float: none
+	height: 38px
+	line-height: 34px
+	border-radius: 1px
+	border: 1px solid #d7d7d7
+	color: #a7a7a7
+	&:after
+		border-color: $c-broun
+	.list
+		@extend %c-broun
+.resume-form__file-upload
+	width: 100%
+	height: 38px
+	margin-top: 7px
+	+clearfix
+	.file-upload__button
+		height: 38px
+
+.resume-form__label
+	@extend %c-broun
+.resume-form__button
+	width: 100%
+// END RESUME-FORM 
+
+
+// BEGIN VACANCY-BLOCK 
+.vacancy-block
+	padding-top: 40px
+.vacancy-block__title
+	font-size: 18px
+	@extend .bold
+	@extend %c-broun
+	text-align: center
+// END VACANCY-BLOCK 
+
+
+// BEGIN VACANCY 
+.vacancy
+	background-color: #fff
+	border: 1px solid #d7d7d7
+	border-radius: 3px
+	overflow: hidden
+	padding: 15px
+	box-sizing: border-box
+	+clearfix
+.vacancy__link
+	display: block
+	text-decoration: none
+.vacancy__preview
+	float: left
+	width: 20%
+.vacancy__description
+	float: left
+	width: 80%
+	padding-left: 25px
+	box-sizing: border-box
+.vacancy__title
+	font-size: 18px
+	@extend .bold
+	@extend %c-broun
+.vacancy__price
+	font-size: 18px
+	color: #141313
+.vacancy__all
+	text-align: right
+.vacancy__all-link
+	@extend .bold
+	@extend %c-broun
+// END VACANCY 
+
+
+// BEGIN CONFECTIONER-SCHOOL 
+.confectioner-school
+	background-color: #fff
+	border: 1px solid #d7d7d7
+	border-radius: 3px
+	overflow: hidden
+	margin: 90px 0 60px
+	padding: 20px 30px
+	box-sizing: border-box
+	.sides
+		margin-top: 25px
+.confectioner-school__title
+	@extend .bold
+	font-size: 18px
+	text-transform: uppercase
+
+.confectioner-school__side
+	float: left
+.confectioner-school__side_l
+	width: 60%
+	padding-right: 20/870*100%
+	box-sizing: border-box
+.confectioner-school__side_r
+	width: 40%
+.confectioner-school__subtitle
+	margin-top: 25px
+	@extend .bold
+.confectioner-school__item
+	margin: 2px 0
+// END CONFECTIONER-SCHOOL 
+
+
+// BEGIN ADDRES 
+.addres-background
+	padding: 40px 0 60px
+	border-top: 1px solid #dddddd
+	text-align: center
+	@extend %order-bg-gradient
+.addres
+	background-color: #fff
+	border: 1px solid #d7d7d7
+	border-radius: 3px
+	overflow: hidden
+	padding: 30px 30px 25px
+	box-sizing: border-box
+	text-align: center
+.addres__title
+	margin-top: 20px
+	@extend .bold
+	font-size: 18px
+	text-transform: uppercase
+.addres__addres
+	margin-top: 15px
+	font-size: 18px
+.addres__phone
+	margin-top: 5px
+.addres__phone-link
+	@extend .bold
+	font-size: 18px
+	color: #141313
+	text-decoration: none
+.addres__email
+	margin-top: 5px
+.addres__email-link
+	@extend .bold
+	@extend %c-broun
+// END ADDRES 
+
+
+
+
+
+// BEGIN BUY 
+.top-buy
+	position: relative
+.top-buy__content
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	z-index: 5
+	+linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,1) 70%)
+.top-buy__side
+	float: left
+	width: 50%
+.top-buy__side_r
+	text-align: right
+	padding: 40px 0 20px
+.top-buy__subtitle
+	font-size: 18px
+	@extend .bold
+.top-buy__city
+	font-size: 18px
+	@extend .bold
+	@extend %c-broun
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.top-buy__icon
+	margin-right: 7px
+
+.buy-map
+	height: 440px
+
+.col-buy
+	float: left
+	width: 33.3333333%
+.buy-addres__addres
+	font-size: 18px
+	@extend .bold
+.buy-addres__time-work
+	margin-bottom: 20px
+// END BUY 
+
+
+
+
+// BEGIN BUY-CITY 
+.buy-city
+	padding: 50px 0
+	+clearfix
+.buy-city__city
+	float: left
+	width: 20%
+	font-size: 24px
+	@extend .bold
+	@extend %c-broun
+.buy-city__text
+	float: left
+	width: 60%
+	padding-top: 10px
+.buy-city__button
+	float: left
+	width: 20%
+	height: 38px
+	line-height: 32px
+	text-align: center
+	box-sizing: border-box
+// END BUY-CITY 
+
+
+
+
+// BEGIN HISTORY 
+.history__line
+	margin: 30px 0 55px
+	+clearfix
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 50px
+		left: 0
+		width: 70%
+		height: 1px
+		background-color: $c-broun
+		opacity: .5
+.history__line_1
+	&:before
+		left: 60px
+.history__line_2
+	margin-bottom: 60px
+	&:before
+		top: 55px
+		left: 90px
+		width: 60%
+.history__line_3
+	&:before
+		top: 54px
+		left: 80px
+		width: 60%
+
+.history__r-border
+	position: absolute
+	background-image: url(img/rightroundborder.png)
+	background-repeat: no-repeat
+	width: 221px
+	height: 161px
+	top: 50px
+	right: 0
+	z-index: 1
+.history__l-border
+	position: absolute
+	background-image: url(img/leftroundborder.png)
+	background-repeat: no-repeat
+	width: 80px
+	height: 161px
+	top: 55px
+	left: 0
+	z-index: 1
+.history__year
+	float: left
+	position: relative
+	border-radius: 50%
+	border: 2px solid $c-broun
+	box-sizing: border-box
+	background-color: #f2f2f2
+	z-index: 2
+	@extend %c-broun
+	&:after,
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		+transform(translateY(-50%))
+		+size(15px)
+		background-color: #f2f2f2
+	&:after
+		left: -17px
+	&:before
+		right: -17px
+.history__year_big
+	+size(100px)
+	font-size: 18px
+	.history__description
+		top: 10px
+		left: 110px
+		width: 200px
+.history__year_medium
+	top: 18px
+	+size(60px)
+	.history__description
+		top: 0
+		left: 70px
+		width: 150px
+.history__year_small
+	top: 28px
+	+size(50px)
+	.history__description
+		top: -20px
+		left: 60px
+		width: 150px
+.history__year_red
+	border-color: #ec4662
+	color: #ec4662
+.history__number
+	position: absolute
+	top: 50%
+	left: 50%
+	+transform(translateX(-50%) translateY(-50%))
+	@extend .bold
+.history__description
+	position: absolute
+	@extend %c-broun
+	@extend .bold
+.history__year_2001
+	margin-left: 32%
+.history__year_2003
+	margin-left: 25%
+.history__year_2010
+	margin-left: 9.5%
+	.history__description
+		top: -10px
+.history__year_2008
+	margin-left: 18.5%
+.history__year_2005
+	margin-left: 23%
+.history__year_2012
+	margin-top: 10px
+	margin-left: 9.5%
+	.history__description
+		top: -20px
+.history__year_2015
+	margin-top: 10px
+	margin-left: 18.5%
+	.history__description
+		top: -20px
+.history__year_2016
+	margin-top: 10px
+	margin-left: 21.5%
+// END HISTORY 
+
+
+// BEGIN YAER-INFO 
+.yaer-info
+	background-color: #fff
+	border-top: 1px solid #dddddd
+	padding-bottom: 35px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		height: 20px
+		width: 100%
+		top: 0
+		left: 0
+		right: 0
+		z-index: 1
+		+linear-gradient(to top, #fff, #f2f2f2)
+	.colums
+		position: relative
+		z-index: 2
+.col-y-3
+	float: left
+	width: 50%
+	box-sizing: border-box
+.col-y-3_l
+	padding-right: 10/870*100%
+.col-y-3_r
+	padding-left: 10/870*100%
+// END YAER-INFO 
+
+// BEGIN YAER-CARD 
+.yaer-card
+	margin: 25px 0
+	+clearfix
+.yaer-card__yaer
+	float: left
+	width: 10%
+	font-size: 18px
+	@extend %c-broun
+	@extend .bold
+	text-align: center
+.yaer-card__info
+	float: left
+	width: 90%
+	padding-left: 10px
+	box-sizing: border-box
+// END YAER-CARD 
+
+
+
+// BEGIN ABOUT 
+.about
+	background-color: #fff
+	border-radius: 3px
+	border: 1px solid #d7d7d7
+	padding: 20px 0
+	margin: 30px 0 50px
+	+clearfix
+.about__item
+	float: left
+	width: 25%
+	text-align: center
+.about__number
+	margin-top: 15px
+	font-size: 30px
+	@extend %c-broun
+	@extend .bold
+.about__text
+	font-size: 18px
+	line-height: 20px
+// END ABOUT 
+
+
+// BEGIN PRODUCTION-COMPANY 
+.production-company
+	background-color: #fff
+	border-radius: 3px
+	border: 1px solid #d7d7d7
+	padding: 23px 30px 27px
+	margin: 30px 0
+	+clearfix
+.production-company__description
+	float: left
+	width: 70%
+.production-company__icon
+	float: left
+	width: 30%
+	padding-top: 40px
+	text-align: center
+	box-sizing: border-box
+.production-company__title
+	font-size: 18px
+	@extend .bold
+	text-transform: uppercase
+.production-company__text
+	margin-top: 25px
+.production-company__link
+	display: inline-block
+	margin-top: 25px
+	text-decoration: none
+	@extend %c-broun
+	@extend .bold
+// END PRODUCTION-COMPANY 
+
+
+
+// BEGIN EXCURSION-COMPANY 
+.excursion-company
+	background-color: #fff
+	border-radius: 3px
+	border: 1px solid #d7d7d7
+	padding: 23px 30px 27px
+	margin: 30px 0
+.excursion-company__title
+	font-size: 18px
+	@extend .bold
+	text-transform: uppercase
+.excursion-company__text
+	margin-top: 25px
+.excursion-company__link
+	display: inline-block
+	margin-top: 25px
+	text-decoration: none
+	@extend %c-broun
+	@extend .bold
+.excursion-company__icon
+	float: left
+	width: 30%
+	text-align: center
+	padding-top: 50px
+	box-sizing: border-box
+.excursion-company__description
+	float: left
+	width: 70%
+.excursion-company__hr
+	margin-top: 20px
+.excursion-company__.request-excursion
+	padding: 25px 0 0
+// END EXCURSION-COMPANY 
+
+
+// BEGIN WORK-COMPANY 
+.work-company
+	background-color: #fff
+	border-radius: 3px
+	border: 1px solid #d7d7d7
+	padding: 23px 30px 27px
+	margin: 30px 0
+	+clearfix
+.work-company__description
+	float: left
+	width: 70%
+.work-company__icon
+	float: left
+	width: 30%
+	padding-top: 60px
+	text-align: center
+	box-sizing: border-box
+.work-company__title
+	font-size: 18px
+	@extend .bold
+	text-transform: uppercase
+.work-company__text
+	margin-top: 25px
+.work-company__link
+	display: inline-block
+	margin-top: 25px
+	text-decoration: none
+	@extend %c-broun
+	@extend .bold
+// END WORK-COMPANY 
+
+
+// BEGIN SLIDER-VERTICAL 
+.slider-vertical
+	height: 480px
+// END SLIDER-VERTICAL 
+
+// BEGIN PHOTOCAKE__BUTTON-LINE 
+.photocake__button-line
+	padding: 28px 0
+
+.photocake__button-line__button
+	height: 38px
+	padding: 0 50px
+	box-sizing: border-box
+	margin-left: 30px
+	&:first-child
+		margin-left: 0
+.photocake__button-line__bytton_white
+	padding: 0 30px
+	line-height: 32px
+	background-color: #fff
+.photocake__button-line_link
+	margin-left: 40px
+	@extend %c-broun
+	@extend .bold
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+// END PHOTOCAKE__BUTTON-LINE 
+
+
+// BEGIN DELIVERY-BANNER 
+.delivery-banner
+	background-image: url(img/delivery-banner.jpg)
+	background-repeat: no-repeat
+	background-position: center top
+	background-size: cover
+	padding: 60px 0
+	margin-bottom: 2px
+.delivery-banner__content
+	width: 40%
+	text-align: center
+	color: #fff
+.delivery-banner__title
+	margin-top: 15px
+	text-transform: uppercase
+	font-size: 18px
+	@extend .bold
+.delivery-banner__text
+	margin-top: 5px
+	line-height: 20px
+// END DELIVERY-BANNER 
+
+
+// BEGIN SHOP-BANNER 
+.shop-banner
+	background-image: url(img/shop-banner.jpg)
+	background-repeat: no-repeat
+	background-position: center top
+	background-size: cover
+	padding: 60px 0
+	margin-bottom: 2px
+.shop-banner__content
+	width: 40%
+	text-align: center
+	color: #fff
+	margin-left: 60%
+.shop-banner__title
+	margin-top: 15px
+	text-transform: uppercase
+	font-size: 18px
+	@extend .bold
+.shop-banner__button
+	margin-top: 10px
+	padding: 0 20px
+// END SHOP-BANNER 
+
+//ALWAYS END
+@import "_media.sass"

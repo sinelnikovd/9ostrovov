@@ -1,0 +1,346 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		block title
+			title Заголовок
+		block description
+			meta(name="description" content="")
+		block keywords
+			meta(name="keywords" content="")
+		
+
+		link(rel="stylesheet" href="_main.min.css")
+
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png")
+		
+	body
+			// BEGIN PAGE
+	.page
+		// BEGIN HEADER 
+		.header
+			// BEGIN TOP-LINE 
+			.top-line
+				.container
+					.sides
+						.side.top-line__side_l
+							.logo
+								a(href="#").logo__link
+									.logo__img-parent
+										img(src="img/logo.png", alt="").logo__img
+									.logo-text
+										span.logo-text__text Девять островов
+						.side_hamburger
+							.hamburger
+								span.hamburger__line.hamburger__line_1
+								span.hamburger__line.hamburger__line_2
+								span.hamburger__line.hamburger__line_3
+						.side.top-line__side_r
+							.phone
+								a(href="tel:+73432690909").phone__link
+									i.icon.icon_phone.phone__icon
+									span.phone__text +7 (343) 269-09-09
+								a(href="javascript:;").button.button_call.phone__button Заказать обратный звонок
+
+			// END TOP-LINE 
+			// BEGIN TOP-MENU 
+			.top-menu
+				.container
+					ul.top-menu__list
+						li.top-menu__item
+							a(href="#").top-menu__link Торт для влюбленных
+						li.top-menu__item
+							a(href="#").top-menu__link Торт на 23 февраля
+						li.top-menu__item
+							a(href="#").top-menu__link Фототорт
+						li.top-menu__item
+							a(href="#").top-menu__link Детские торты
+						li.top-menu__item
+							a(href="#").top-menu__link Подарочные торты
+						li.top-menu__item
+							a(href="#").top-menu__link Свадебный торт
+						li.top-menu__item
+							a(href="#").top-menu__link Схема работы
+						li.top-menu__item
+							a(href="#").top-menu__link Доставка и оплата
+			// END TOP-MENU 
+		.container
+			// BEGIN SIDEBAR 
+			.sidebar
+				// BEGIN SIDEBAR-MENU 
+				ul.sidebar-menu
+					li.sidebar-menu__item.sidebar-menu__item_submenu
+						a(href="#").sidebar-menu__link Торт на заказ
+						ul.sidebar-submenu
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Каталог тортов
+								ul.sidebar-subsubmenu
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт для влюбленных
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт на 23 февраля
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Фототорт
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Детские торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Подарочные торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Свадебный торт
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Создай торт по своему эскизу
+
+					li.sidebar-menu__item.sidebar-menu__item_submenu
+						a(href="#").sidebar-menu__link Готовая продукция
+						ul.sidebar-submenu
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Каталог тортов
+								ul.sidebar-subsubmenu
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт для влюбленных
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт на 23 февраля
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Фототорт
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Детские торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Подарочные торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Свадебный торт
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Создай торт по своему эскизу
+					li.sidebar-menu__item.sidebar-menu__item_submenu
+						a(href="#").sidebar-menu__link О компании
+						ul.sidebar-submenu
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Каталог тортов
+								ul.sidebar-subsubmenu
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт для влюбленных
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт на 23 февраля
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Фототорт
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Детские торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Подарочные торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Свадебный торт
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Создай торт по своему эскизу
+					li.sidebar-menu__item
+						a(href="#").sidebar-menu__link Где купить
+					li.sidebar-menu__item.sidebar-menu__item_submenu
+						a(href="#").sidebar-menu__link Блог кулинара
+						ul.sidebar-submenu
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Каталог тортов
+								ul.sidebar-subsubmenu
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт для влюбленных
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт на 23 февраля
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Фототорт
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Детские торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Подарочные торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Свадебный торт
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Создай торт по своему эскизу
+					li.sidebar-menu__item
+						a(href="#").sidebar-menu__link Партнерам
+					li.sidebar-menu__item.sidebar-menu__item_submenu
+						a(href="#").sidebar-menu__link Акции и скидки
+						ul.sidebar-submenu
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Каталог тортов
+								ul.sidebar-subsubmenu
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт для влюбленных
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Торт на 23 февраля
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Фототорт
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Детские торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Подарочные торты
+									li.sidebar-subsubmenu__item
+										a(href="#").sidebar-subsubmenu__link Свадебный торт
+							li.sidebar-submenu__item
+								a(href="#").sidebar-submenu__link Создай торт по своему эскизу
+				// END SIDEBAR-MENU 
+				// BEGIN SIDEBAR-BANNER 
+				.sidebar-banner
+					a(href="#").sidebar-banner__link
+						.sidebar-banner__content
+							i.icon.icon_cakes.sidebar-banner__icon
+							span.sidebar-banner__text Заказать торт
+				// END SIDEBAR-BANNER 
+				// BEGIN SUBSCRIPTION 
+				.subscription
+					p.subscription__text Подпишитесь и узнавайте о акциях первым!
+					form(action="/").subscription__form
+						.subscription__line
+							input(type="text" placeholder="Ваша электронная почта").subscription__input
+						.subscription__line
+							button(type="submit").button.subscription__button Подписаться
+					ul.subscription-social
+						li.subscription-social__item
+							a(href="#").subscription-social__link
+								i.icon.icon_vk
+						li.subscription-social__item
+							a(href="#").subscription-social__link
+								i.icon.icon_fb
+						li.subscription-social__item
+							a(href="#").subscription-social__link
+								i.icon.icon_in
+						li.subscription-social__item
+							a(href="#").subscription-social__link
+								i.icon.icon_gl
+				// END SUBSCRIPTION 
+			// END SIDEBAR 
+		// END HEADER 
+		
+		// BEGIN WRAPPER 
+		.wrapper
+			block content
+				//- Здесь пишем код 
+		// END WRAPPER 
+		// END PAGE 
+		// BEGIN FOOTER 
+		.footer
+			.container
+				.footer-hamburger
+					span.footer-hamburger__text Меню
+				.footer-blocks
+					// BEGIN FOOTER-BLOCK 
+					.footer-block
+						h3.footer-block__title
+							a(href="#").footer-block__link Торт на заказ
+						ul.footer-block__list
+							li.footer-block__item
+								a(href="#").footer-block__link Каталог тортов
+							li.footer-block__item
+								a(href="#").footer-block__link Фототорты
+							li.footer-block__item
+								a(href="#").footer-block__link Детские торты
+							li.footer-block__item
+								a(href="#").footer-block__link Подарочные торты 
+							li.footer-block__item
+								a(href="#").footer-block__link Свадебные торты
+							li.footer-block__item
+								a(href="#").footer-block__link Создай торт по своему эскизу
+					// END FOOTER-BLOCK 
+					// BEGIN FOOTER-BLOCK 
+					.footer-block
+						h3.footer-block__title
+							a(href="#").footer-block__link Готовая продукция
+						ul.footer-block__list
+							li.footer-block__item
+								a(href="#").footer-block__link Готовые торты
+							li.footer-block__item
+								a(href="#").footer-block__link Кексы
+							li.footer-block__item
+								a(href="#").footer-block__link Печенье
+							li.footer-block__item
+								a(href="#").footer-block__link Пирожное
+					// END FOOTER-BLOCK 
+					// BEGIN FOOTER-BLOCK 
+					.footer-block
+						h3.footer-block__title
+							a(href="#").footer-block__link О компании
+						ul.footer-block__list
+							li.footer-block__item
+								a(href="#").footer-block__link История 
+							li.footer-block__item
+								a(href="#").footer-block__link Производство
+							li.footer-block__item
+								a(href="#").footer-block__link Экскурсии на производство
+							li.footer-block__item
+								a(href="#").footer-block__link Работа в компании
+							li.footer-block__item
+								a(href="#").footer-block__link Контакты
+					// END FOOTER-BLOCK 
+					// BEGIN FOOTER-BLOCK 
+					.footer-block
+						ul.footer-block__list.footer-block__list_bold
+							li.footer-block__item
+								a(href="#").bold.footer-block__link Где купить
+							li.footer-block__item
+								a(href="#").bold.footer-block__link Блог кулинара
+							li.footer-block__item
+								a(href="#").bold.footer-block__link Партнерам 
+							li.footer-block__item
+								a(href="#").bold.footer-block__link Акции и скидки
+					// END FOOTER-BLOCK 
+				// BEGIN FOOTER-BLOCK 
+				.footer-block.footer-block__contact
+					ul.footer-contact
+						li.footer-contact__item
+							a(href="#").footer-contact__link
+								.footer-contact__icon
+									i.icon.icon_footer-call
+								span.footer-contact__text +7 (343) 269-09-09
+						li.footer-contact__item
+							a(href="#").footer-contact__link
+								.footer-contact__icon
+									i.icon.icon_footer-mail
+								span.footer-contact__text zakaz@9ostrovov.ru
+						li.footer-contact__item
+							a(href="#").footer-contact__link
+								.footer-contact__icon
+									i.icon.icon_footer-adders
+								span.footer-contact__text 624071, Россия, <br>Среднеуральск, улица Победы, 1
+					.footer-social
+						p.footer-social__title Поделится:
+						ul.footer-social__list
+							li.footer-social__item
+								a(href="#").footer-social__link
+									i.icon.icon_twitter
+							li.footer-social__item
+								a(href="#").footer-social__link
+									i.icon.icon_facebook
+							li.footer-social__item
+								a(href="#").footer-social__link
+									i.icon.icon_google
+							li.footer-social__item
+								a(href="#").footer-social__link
+									i.icon.icon_vkontakte
+				// END FOOTER-BLOCK 
+		// END FOOTER 
+
+		.hidden
+			block popup
+
+		<!--[if lt IE 9]>
+		script(src="libs/html5shiv/es5-shim.min.js")
+		script(src="libs/html5shiv/html5shiv.min.js")
+		script(src="libs/html5shiv/html5shiv-printshiv.min.js")
+		script(src="libs/respond/respond.min.js")
+		<![endif]-->
+
+
+
+		//- Load Scripts
+		script.
+			var scr = {"scripts":[
+			{"src" : "libs/modernizr/modernizr.js", "async" : false},
+			{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+			{"src" : "libs/inputmask/input.mask.js", "async" : false},
+			{"src" : "libs/owl/owl.carousel.min.js", "async" : false},
+			{"src" : "libs/nice-select/jquery.nice-select.min.js", "async" : false},
+			{"src" : "js/common.js", "async" : false}
+			]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);

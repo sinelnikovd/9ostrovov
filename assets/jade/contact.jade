@@ -1,0 +1,66 @@
+extends ./template/template.jade
+
+block title
+	title Контакты
+
+block content
+	// BEGIN TITLE 
+	.top-contact
+		.top-contact__content
+			.container
+				.side-content
+					.title
+						h1.title__text Контакты
+	// END TITLE 
+
+
+	// BEGIN CONTACT-MAP 
+	.contact-map#map
+	script(src='js/contactMap.js')
+	script(src='https://maps.googleapis.com/maps/api/js?callback=initContactMap')
+	// END CONTACT-MAP 
+
+	// BEGIN CONTACT 
+	.contact
+		.container
+			.side-content
+				.colums
+					.col-2.col-2-m
+						h2.contact__title Фактический адрес:
+						p.contact__addres 624071, Россия, Среднеуральск, улица Победы, 1 
+
+						p.contact__phone-title Телефон приемной:
+						p.contact__phone
+							a(href="tel:+73433727150").contact__phone-link +7 (343) 372-71-50 (51)
+
+						p.contact__phone-title Телефон заказа тортов:
+						p.contact__phone
+							a(href="tel:+73432690909").contact__phone-link +7 (343) 269-09-09
+					.col-2.col-2-m
+						h2.contact__title Почтовый адрес:
+						p.contact__addres 624071, Россия, Среднеуральск, улица Победы, 1 
+
+						p.contact__phone-title Телефон тех. поддержки:
+						p.contact__phone
+							a(href="tel:+73433727159").contact__phone-link +7 (343) 372-71-59
+
+						p.contact__email-title Email:
+						p.contact__email
+							a(href="mailto:zakaz@9ostrovov.ru").contact__email-link zakaz@9ostrovov.ru
+					.col-2.col-2-m
+						h2.contact__title Реквизиты:
+						p.contact__text.
+							ООО Торговый дом <br>
+							«Девять островов - Екатеринбург» <br>
+							ОГРН 105 660 3480 603 <br>
+							Юр. адрес: 620137, г.Екатеринбург, <br>
+							ул. Академическая, 10 <br>
+							Факт. адрес: 624071, Россия, <br>Среднеуральск, <br>
+							улица Победы, 1 <br>
+							Почтовый адрес: 624071, Россия, <br>
+							Среднеуральск, а/я 19 <br>
+							ИНН 667 00 74 009 КПП 667 001 001 <br>
+							Р/с 40702810162400000093 в ОАО "Уральский 
+							банк реконструкции и развития" <br>
+							К/с 30101810900000000795 БИК 046577795
+	// END CONTACT 

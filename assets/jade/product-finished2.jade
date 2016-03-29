@@ -1,0 +1,132 @@
+extends ./template/template.jade
+
+block title
+	title Главная страница
+
+block content
+
+	.container
+		.side-content
+			// BEGIN TITLE 
+			.title
+				h1.title__text Торт на заказ
+			// END TITLE 
+			// BEGIN DESCRIPTION 
+			.description
+				p.description__title.description__title_bold В ассортименте кондитерской продукции компании «9 Островов» представлены торты, пирожные, печенье и кексы
+				p.description__text Вся наша продукция соответствует стандартам качества, что подтверждено сертификатами. Печенье нашей фабрики любят покупатели и с удовольствием выбирают в магазинах знакомые с детства кондитерские изделия.
+			// END DESCRIPTION 
+
+
+	// BEGIN SECTION-SLIDER 
+	.section-slider
+		.slider
+			// BEGIN SLIDER__ITEM 
+			.slider__item.slider__item_product(style="background-image:url(img/product-finished.jpg)")
+				.container
+					.side-content
+						h2.slider__title Свежее печенье: выгодные условия на оптовую покупку
+						p.slider__text.slider__text_product «9 Островов» предлагает особые условия для своих партнеров: вы не только приобретете печенье и крекеры оптом по выгодным ценам, но и получите скидку в случае крупного заказа.
+						a(href="#").button.button_broun_border.button_product Все акции и скидки
+			// END SLIDER__ITEM 
+	// END SECTION-SLIDER 
+
+
+	// BEGIN CAKE-ORDER-TWO 
+	.cake-order-two
+		.container
+			.side-content
+				h2.h2 Каталог готовой продукции
+				.colums.cake-order-two__colums
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/1.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Специальные предложения
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/2.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title 9 островов
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/3.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Rifotta Crema
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/4.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Торталье
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/5.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Страна чудес
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/6.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Чайная линия
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/7.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Пирожное
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/8.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Печенье
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/9.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Кексы
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+					.col-3.col-3-m
+						// BEGIN MAIN-CAKES-ITEM 
+						.main-cakes-item
+							a(href="#").main-cakes-item__link
+								.main-cakes-item__preview(style="background-image: url(img/product/10.jpg)")
+								.main-cakes-item__description
+									h3.main-cakes-item__title Песочные пироги
+									p.main-cakes-item__text Желанный сюрприз ко дню рождения, юбилею, годовщине, профессиональному или любому другому празднику.
+						// END MAIN-CAKES-ITEM 
+	// END CAKE-ORDER-TWO 

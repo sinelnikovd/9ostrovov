@@ -1,0 +1,94 @@
+extends ./template/template.jade
+
+block title
+	title Производство
+
+block content
+	// BEGIN TITLE 
+	.container
+		.side-content
+			.title
+				h1.title__text Производство
+	// END TITLE 
+
+	// BEGIN DESCRIPTION 
+	.container
+		.side-content
+			.description
+				p.description__title.description__title_bold Сладкие шедевры ручной работы – многоярусные торты, настоящие сказочные истории из сахара и крема и веселые сюрпризы для Ваших любимых.
+				p.description__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
+	// END DESCRIPTION 
+
+	// BEGIN PRODUCTION-BANNER 
+	.production-banner
+	// END PRODUCTION-BANNER 
+
+
+	// BEGIN WORKSHOP 
+	.workshop
+		.container
+			.side-content
+				.colums
+					.col-w1
+						// BEGIN WORKSHOP__CARD 
+						.workshop__card.workshop__card_line_2
+							a(href="#").workshop__link
+								.workshop__preview
+									span.workshop__title Кондитерский цех
+						// END WORKSHOP__CARD 
+					.col-w2
+						.col-w-line
+							.col-w50.col-w50_l
+								// BEGIN WORKSHOP__CARD 
+								.workshop__card.workshop__card_line_1
+									a(href="#").workshop__link
+										.workshop__preview
+											span.workshop__title Кондитерский цех
+								// END WORKSHOP__CARD 
+							.col-w50.col-w50_r
+								// BEGIN WORKSHOP__CARD 
+								.workshop__card.workshop__card_line_1
+									a(href="#").workshop__link
+										.workshop__preview
+											span.workshop__title Кондитерский цех
+								// END WORKSHOP__CARD 
+						.col-w-line
+							// BEGIN WORKSHOP__CARD 
+							.workshop__card.workshop__card_line_1
+								a(href="#").workshop__link
+									.workshop__preview
+										span.workshop__title Кондитерский цех
+							// END WORKSHOP__CARD 
+					.col-w3
+						.col-w-line
+							// BEGIN WORKSHOP__CARD 
+							.workshop__card.workshop__card_line_1
+								a(href="#").workshop__link
+									.workshop__preview
+										span.workshop__title Кондитерский цех
+							// END WORKSHOP__CARD 
+						.col-w-line
+							// BEGIN WORKSHOP__CARD 
+							.workshop__card.workshop__card_line_1
+								a(href="#").workshop__link
+									.workshop__preview
+										span.workshop__title Кондитерский цех
+							// END WORKSHOP__CARD 
+	// END WORKSHOP 
+
+
+	// BEGIN EXCURSION-BANNER 
+
+	.container
+		.side-content
+			.excursion-banner
+				.sides
+					.excursion-banner__description
+						h2.excursion-banner__title ЭКСКУРСИЯ НА ПРОИЗВОДСТВО
+						p.excursion-banner__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
+						a(href="#").excursion-banner__link Подробнее
+							i.icon.icon_b-left.excursion-banner__left
+					.excursion-banner__image
+						i.icon.icon_camera
+
+	// END EXCURSION-BANNER 

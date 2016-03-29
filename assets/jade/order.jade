@@ -1,0 +1,221 @@
+extends ./template/template.jade
+
+block title
+	title Главная страница
+
+block content
+	// BEGIN TITLE 
+	.container
+		.side-content
+			.title
+				h1.title__text РАСЧЕТ И ОФОРМЛЕНИЕ ЗАКАЗА
+	// END TITLE 
+
+	// BEGIN ORDER-TOP 
+	.order-top
+		.container
+			.side-content
+				.colums
+					.order-top__side.order-top__side_l
+						img(src="img/order-top.jpg", alt="")
+					.order-top__side.order-top__side_m
+						h2.order-top__title Фототорт №Ф1
+						p.order-top__price Стоимость от 1500 <span class="rubl rubl_black">Р</span>
+					.order-top__side.order-top__side_r
+						a(href="#").button.button_broun_border.order-top__button Выбрать другой торт
+	// END ORDER-TOP 
+
+	form(action="/")
+		// BEGIN ORDER-ADD-FILE 
+		.order-add-file
+			.container
+				.side-content
+					h2.order-title Добавьте файл или фото своего экскиза
+					.file-upload
+						button(type="button").file-upload__button Добавить файл
+						span.file-upload__text Файл не выбран
+						input(type="file").file-upload__file
+		// END ORDER-ADD-FILE 
+
+		// BEGIN ORDER-TEXT 
+		.order-text
+			.container
+				.side-content
+					h2.order-title Впишите в поле текст, который вы бы хотели разместить на торте
+					.form-control
+						input(type="text" placeholder="Маша, с Днем Рождения!").input.order__input
+		// END ORDER-TEXT 
+
+		// BEGIN ORDER-WEIGHT 
+		.order-weight
+			.container
+				.side-content
+					h2.order-title Вес торта
+					.order__round-radio
+						.order__control
+							input(type="radio" name="weight")#one-weight.order__radio
+							label(for="one-weight").order__label 1 кг.
+						.order__control
+							input(type="radio" name="weight" checked)#two-weight.order__radio
+							label(for="two-weight").order__label 2 кг.
+						.order__control
+							input(type="radio" name="weight")#three-weight.order__radio
+							label(for="three-weight").order__label 3+ кг.
+
+					
+					.order-weight__calculation
+						span.order-title Количесвто человек
+						i.icon.icon_fork.calculation__icon
+						input(type="text" placeholder="2").input.calculation__input
+						span.order-weight__count = 2,5 кг.
+		// END ORDER-WEIGHT 
+
+
+		// BEGIN ORDER-LONGLINES 
+		.order-longlines
+			.container
+				.side-content
+					h2.order-title Количество ярусов
+					.order__round-radio
+						.order__control
+							input(type="radio" name="longlines")#classic-longlines.order__radio
+							label(for="classic-longlines").order__label.order__label_big.order__label_one_line Классический
+						.order__control
+							input(type="radio" name="longlines" checked)#type-longlines.order__radio
+							label(for="type-longlines").order__label.order__label_big Укажите<br>тип яруса
+						.order__control
+							input(type="radio" name="longlines")#type2-longlines.order__radio
+							label(for="type2-longlines").order__label.order__label_big Выберите<br>тип яруса
+						.order__control
+							input(type="radio" name="longlines")#add-longlines.order__radio
+							label(for="add-longlines").order__label.order__label_big.order__label_add Добавить <br>ярус
+					.order__stand
+						input(type="checkbox")#stand.oreder__checkbox
+						label(for="stand").label_stand Арендовать подставку 
+		// END ORDER-LONGLINES 
+
+
+		// BEGIN ORDER-FORM 
+		.order-form
+			.container
+				.side-content
+					h2.order-title Форма торта
+					.order__round-radio.order__round-radio_form
+						.order__control
+							input(type="radio" name="form" checked)#standart-form.order__form.order__form_standart
+							label(for="standart-form").order__label Круглая
+						.order__control
+							input(type="radio" name="form" )#nostandart-form.order__form.order__form_nostandart
+							label(for="nostandart-form").order__label Нестандартная
+						.order__control
+							input(type="radio" name="form")#square-form.order__form.order__form_square
+							label(for="square-form").order__label Квадратная
+						.order__control
+							input(type="radio" name="form")#rectangular-form.order__form.order__form_rectangular
+							label(for="rectangular-form").order__label Прямоугольная
+					// BEGIN ORDER-FORM-TYPE 
+					.order-form-type
+						.order-form-type__close &#215;
+						ul.order-form-type__list
+							li.order-form-type__item
+								input(type="radio" name="form-type" checked)#order-form-type1.order__form-type
+								label(for="order-form-type1").order__label 9 Островов
+							li.order-form-type__item
+								input(type="radio" name="form-type" checked)#order-form-type2.order__form-type
+								label(for="order-form-type2").order__label Анжела
+							li.order-form-type__item
+								input(type="radio" name="form-type" checked)#order-form-type3.order__form-type
+								label(for="order-form-type3").order__label Веселая карусель
+							li.order-form-type__item
+								input(type="radio" name="form-type" checked)#order-form-type4.order__form-type
+								label(for="order-form-type4").order__label Пчелка Жу-Жу
+							li.order-form-type__item
+								input(type="radio" name="form-type" checked)#order-form-type5.order__form-type
+								label(for="order-form-type5").order__label Смаковница
+							li.order-form-type__item
+								input(type="radio" name="form-type" checked)#order-form-type6.order__form-type
+								label(for="order-form-type6").order__label Лимпопо
+					// END ORDER-FORM-TYPE 
+
+					p.order-form__text
+						a(href="#").order-form__link Заказать пробный набор начинок
+						br
+						a(href="#").order-form__link Узнать подробнее
+		// END ORDER-FORM 
+
+		// BEGIN ORDER-DELYVERY 
+		.order-delyvery
+			.container
+				.side-content
+					h2.order-title Способ доставки
+					.order-delyvery__tabs-nav
+						.order-delyvery__tab-nav Забрать из магазина
+						.order-delyvery__tab-nav.active Доставка до дверей
+					.order-delyvery__tabs
+						.order-delyvery__tab
+							.order-delyvery__select-container
+								select(name="shop")#shop.order-delyvery__select.select.select-nice.wide
+									option(value="1") Выберите магазин
+									option(value="2") Выберите магазин
+									option(value="3") Выберите магазин
+									option(value="4") Выберите магазин
+						.order-delyvery__tab.active
+							.order-delyvery__line
+								.order-delyvery__control
+									label(for="").order-delyvery__label Когда доставить торт
+									input(type="text").input.order-delyvery__input
+								.order-delyvery__control
+									span.order-delyvery__label Промежуток времени
+									input(type="text").input.order-delyvery__input.order-delyvery__input_time
+									| -
+									input(type="text").input.order-delyvery__input.order-delyvery__input_time
+
+		// END ORDER-DELYVERY 
+
+
+		// BEGIN ORDER-CHECK 
+		.order-check
+			.container
+				.side-content
+					h2.order-title Стоимость и оплата
+					.sides.order-check__sides
+						.order-check__side.order-check__side_l
+							.order-check__line
+								.order-check__name Стоимость торта
+								.order-check__price 1000
+									span.rubl.rubl_black Р
+							.order-check__line
+								.order-check__name Аренда подставки
+								.order-check__price 200
+									span.rubl.rubl_black Р
+							.order-check__line
+								.order-check__name Дотсавка до дверей
+								.order-check__price 300
+									span.rubl.rubl_black Р
+						.order-check__side.order-check__side_r
+							.provisional-price
+								p.provisional-price__text Предварительная стоимость торта:
+								p.provisional-price__price 1500
+									span.rubl.rubl_big Р
+		// END ORDER-CHECK 
+
+
+		// BEGIN ORDER-CONTACT 
+		.order-contact
+			.container
+				.side-content
+					h2.order-title Оставьте контактные данные для заказа
+					.order-contact__line
+						input(type="text" placeholder="Ваше имя").input.order-contact__input
+					.order-contact__line
+						input(type="text" placeholder="Контактный телефон").input.order-contact__input.data-inputmask
+					.order-contact__line
+						input(type="text" placeholder="Электронная почта").input.order-contact__input
+					.order-contact__line
+						select(name="").select.select-nice.wide.order-contact__select
+							option(value="1") Оплатить в торговой точке
+							option(value="1") Оплатить в торговой точке
+					.order-contact__line
+						button(type="submit").button.button_broun.order-contact__button Перейти к оплате
+		// END ORDER-CONTACT 
+
