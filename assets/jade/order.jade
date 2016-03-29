@@ -102,41 +102,110 @@ block content
 					h2.order-title Форма торта
 					.order__round-radio.order__round-radio_form
 						.order__control
-							input(type="radio" name="form" checked)#standart-form.order__form.order__form_standart
+							input(type="radio" name="form" checked data-type-id="standart-form-type")#standart-form.order__form.order__form_standart
 							label(for="standart-form").order__label Круглая
 						.order__control
-							input(type="radio" name="form" )#nostandart-form.order__form.order__form_nostandart
+							input(type="radio" name="form" data-type-id="nostandart-form-type")#nostandart-form.order__form.order__form_nostandart
 							label(for="nostandart-form").order__label Нестандартная
 						.order__control
-							input(type="radio" name="form")#square-form.order__form.order__form_square
+							input(type="radio" name="form" data-type-id="square-form-type")#square-form.order__form.order__form_square
 							label(for="square-form").order__label Квадратная
 						.order__control
-							input(type="radio" name="form")#rectangular-form.order__form.order__form_rectangular
+							input(type="radio" name="form" data-type-id="rectangular-form-type")#rectangular-form.order__form.order__form_rectangular
 							label(for="rectangular-form").order__label Прямоугольная
-					// BEGIN ORDER-FORM-TYPE 
-					.order-form-type
-						.order-form-type__close &#215;
-						ul.order-form-type__list
-							li.order-form-type__item
-								input(type="radio" name="form-type" checked)#order-form-type1.order__form-type
-								label(for="order-form-type1").order__label 9 Островов
-							li.order-form-type__item
-								input(type="radio" name="form-type" checked)#order-form-type2.order__form-type
-								label(for="order-form-type2").order__label Анжела
-							li.order-form-type__item
-								input(type="radio" name="form-type" checked)#order-form-type3.order__form-type
-								label(for="order-form-type3").order__label Веселая карусель
-							li.order-form-type__item
-								input(type="radio" name="form-type" checked)#order-form-type4.order__form-type
-								label(for="order-form-type4").order__label Пчелка Жу-Жу
-							li.order-form-type__item
-								input(type="radio" name="form-type" checked)#order-form-type5.order__form-type
-								label(for="order-form-type5").order__label Смаковница
-							li.order-form-type__item
-								input(type="radio" name="form-type" checked)#order-form-type6.order__form-type
-								label(for="order-form-type6").order__label Лимпопо
-					// END ORDER-FORM-TYPE 
-
+					.order-form-types
+						// BEGIN ORDER-FORM-TYPE 
+						.order-form-type.active#standart-form-type
+							.order-form-type__close &#215;
+							ul.order-form-type__list
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type1.order__form-type
+									label(for="order-form-type1").order__label 9 Островов
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type2.order__form-type
+									label(for="order-form-type2").order__label Анжела
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type3.order__form-type
+									label(for="order-form-type3").order__label Веселая карусель
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type4.order__form-type
+									label(for="order-form-type4").order__label Пчелка Жу-Жу
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type5.order__form-type
+									label(for="order-form-type5").order__label Смаковница
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type6.order__form-type
+									label(for="order-form-type6").order__label Лимпопо
+						// END ORDER-FORM-TYPE 
+						// BEGIN ORDER-FORM-TYPE 
+						.order-form-type#nostandart-form-type
+							.order-form-type__close &#215;
+							ul.order-form-type__list
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type1.order__form-type
+									label(for="order-form-type1").order__label 92 Островов
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type2.order__form-type
+									label(for="order-form-type2").order__label Анжела
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type3.order__form-type
+									label(for="order-form-type3").order__label Веселая карусель
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type4.order__form-type
+									label(for="order-form-type4").order__label Пчелка Жу-Жу
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type5.order__form-type
+									label(for="order-form-type5").order__label Смаковница
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type6.order__form-type
+									label(for="order-form-type6").order__label Лимпопо
+						// END ORDER-FORM-TYPE 
+						// BEGIN ORDER-FORM-TYPE 
+						.order-form-type#square-form-type
+							.order-form-type__close &#215;
+							ul.order-form-type__list
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type1.order__form-type
+									label(for="order-form-type1").order__label 93 Островов
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type2.order__form-type
+									label(for="order-form-type2").order__label Анжела
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type3.order__form-type
+									label(for="order-form-type3").order__label Веселая карусель
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type4.order__form-type
+									label(for="order-form-type4").order__label Пчелка Жу-Жу
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type5.order__form-type
+									label(for="order-form-type5").order__label Смаковница
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type6.order__form-type
+									label(for="order-form-type6").order__label Лимпопо
+						// END ORDER-FORM-TYPE 
+						// BEGIN ORDER-FORM-TYPE 
+						.order-form-type#rectangular-form-type
+							.order-form-type__close &#215;
+							ul.order-form-type__list
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type1.order__form-type
+									label(for="order-form-type1").order__label 94 Островов
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type2.order__form-type
+									label(for="order-form-type2").order__label Анжела
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type3.order__form-type
+									label(for="order-form-type3").order__label Веселая карусель
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type4.order__form-type
+									label(for="order-form-type4").order__label Пчелка Жу-Жу
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type5.order__form-type
+									label(for="order-form-type5").order__label Смаковница
+								li.order-form-type__item
+									input(type="radio" name="form-type" checked)#order-form-type6.order__form-type
+									label(for="order-form-type6").order__label Лимпопо
+						// END ORDER-FORM-TYPE 
 					p.order-form__text
 						a(href="#").order-form__link Заказать пробный набор начинок
 						br
@@ -163,12 +232,12 @@ block content
 							.order-delyvery__line
 								.order-delyvery__control
 									label(for="").order-delyvery__label Когда доставить торт
-									input(type="text").input.order-delyvery__input
+									input(type="text").input.order-delyvery__input.input_date
 								.order-delyvery__control
 									span.order-delyvery__label Промежуток времени
-									input(type="text").input.order-delyvery__input.order-delyvery__input_time
+									input(type="text").input.order-delyvery__input.order-delyvery__input_time.input_time
 									| -
-									input(type="text").input.order-delyvery__input.order-delyvery__input_time
+									input(type="text").input.order-delyvery__input.order-delyvery__input_time.input_time
 
 		// END ORDER-DELYVERY 
 

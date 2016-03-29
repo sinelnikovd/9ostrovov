@@ -5,6 +5,7 @@
     <title>ЗАКАЗАТЬ ТОРТ ПО СВОЕМУ ЭКСКИЗУ</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <!--link(rel="stylesheet" href="libs/datetimepicker/jquery.datetimepicker.css")-->
     <link rel="stylesheet" href="_main.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -271,53 +272,148 @@
               <h2 class="order-title">Форма торта</h2>
               <div class="order__round-radio order__round-radio_form">
                 <div class="order__control">
-                  <input type="radio" name="form" checked id="standart-form" class="order__form order__form_standart">
+                  <input type="radio" name="form" checked data-type-id="standart-form-type" id="standart-form" class="order__form order__form_standart">
                   <label for="standart-form" class="order__label">Круглая</label>
                 </div>
                 <div class="order__control">
-                  <input type="radio" name="form" id="nostandart-form" class="order__form order__form_nostandart">
+                  <input type="radio" name="form" data-type-id="nostandart-form-type" id="nostandart-form" class="order__form order__form_nostandart">
                   <label for="nostandart-form" class="order__label">Нестандартная</label>
                 </div>
                 <div class="order__control">
-                  <input type="radio" name="form" id="square-form" class="order__form order__form_square">
+                  <input type="radio" name="form" data-type-id="square-form-type" id="square-form" class="order__form order__form_square">
                   <label for="square-form" class="order__label">Квадратная</label>
                 </div>
                 <div class="order__control">
-                  <input type="radio" name="form" id="rectangular-form" class="order__form order__form_rectangular">
+                  <input type="radio" name="form" data-type-id="rectangular-form-type" id="rectangular-form" class="order__form order__form_rectangular">
                   <label for="rectangular-form" class="order__label">Прямоугольная</label>
                 </div>
               </div>
-              <!-- BEGIN ORDER-FORM-TYPE -->
-              <div class="order-form-type">
-                <div class="order-form-type__close">&#215;</div>
-                <ul class="order-form-type__list">
-                  <li class="order-form-type__item">
-                    <input type="radio" name="form-type" checked id="order-form-type1" class="order__form-type">
-                    <label for="order-form-type1" class="order__label">9 Островов</label>
-                  </li>
-                  <li class="order-form-type__item">
-                    <input type="radio" name="form-type" checked id="order-form-type2" class="order__form-type">
-                    <label for="order-form-type2" class="order__label">Анжела</label>
-                  </li>
-                  <li class="order-form-type__item">
-                    <input type="radio" name="form-type" checked id="order-form-type3" class="order__form-type">
-                    <label for="order-form-type3" class="order__label">Веселая карусель</label>
-                  </li>
-                  <li class="order-form-type__item">
-                    <input type="radio" name="form-type" checked id="order-form-type4" class="order__form-type">
-                    <label for="order-form-type4" class="order__label">Пчелка Жу-Жу</label>
-                  </li>
-                  <li class="order-form-type__item">
-                    <input type="radio" name="form-type" checked id="order-form-type5" class="order__form-type">
-                    <label for="order-form-type5" class="order__label">Смаковница</label>
-                  </li>
-                  <li class="order-form-type__item">
-                    <input type="radio" name="form-type" checked id="order-form-type6" class="order__form-type">
-                    <label for="order-form-type6" class="order__label">Лимпопо</label>
-                  </li>
-                </ul>
+              <div class="order-form-types">
+                <!-- BEGIN ORDER-FORM-TYPE -->
+                <div id="standart-form-type" class="order-form-type active">
+                  <div class="order-form-type__close">&#215;</div>
+                  <ul class="order-form-type__list">
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type1" class="order__form-type">
+                      <label for="order-form-type1" class="order__label">9 Островов</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type2" class="order__form-type">
+                      <label for="order-form-type2" class="order__label">Анжела</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type3" class="order__form-type">
+                      <label for="order-form-type3" class="order__label">Веселая карусель</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type4" class="order__form-type">
+                      <label for="order-form-type4" class="order__label">Пчелка Жу-Жу</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type5" class="order__form-type">
+                      <label for="order-form-type5" class="order__label">Смаковница</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type6" class="order__form-type">
+                      <label for="order-form-type6" class="order__label">Лимпопо</label>
+                    </li>
+                  </ul>
+                </div>
+                <!-- END ORDER-FORM-TYPE -->
+                <!-- BEGIN ORDER-FORM-TYPE -->
+                <div id="nostandart-form-type" class="order-form-type">
+                  <div class="order-form-type__close">&#215;</div>
+                  <ul class="order-form-type__list">
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type1" class="order__form-type">
+                      <label for="order-form-type1" class="order__label">92 Островов</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type2" class="order__form-type">
+                      <label for="order-form-type2" class="order__label">Анжела</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type3" class="order__form-type">
+                      <label for="order-form-type3" class="order__label">Веселая карусель</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type4" class="order__form-type">
+                      <label for="order-form-type4" class="order__label">Пчелка Жу-Жу</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type5" class="order__form-type">
+                      <label for="order-form-type5" class="order__label">Смаковница</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type6" class="order__form-type">
+                      <label for="order-form-type6" class="order__label">Лимпопо</label>
+                    </li>
+                  </ul>
+                </div>
+                <!-- END ORDER-FORM-TYPE -->
+                <!-- BEGIN ORDER-FORM-TYPE -->
+                <div id="square-form-type" class="order-form-type">
+                  <div class="order-form-type__close">&#215;</div>
+                  <ul class="order-form-type__list">
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type1" class="order__form-type">
+                      <label for="order-form-type1" class="order__label">93 Островов</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type2" class="order__form-type">
+                      <label for="order-form-type2" class="order__label">Анжела</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type3" class="order__form-type">
+                      <label for="order-form-type3" class="order__label">Веселая карусель</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type4" class="order__form-type">
+                      <label for="order-form-type4" class="order__label">Пчелка Жу-Жу</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type5" class="order__form-type">
+                      <label for="order-form-type5" class="order__label">Смаковница</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type6" class="order__form-type">
+                      <label for="order-form-type6" class="order__label">Лимпопо</label>
+                    </li>
+                  </ul>
+                </div>
+                <!-- END ORDER-FORM-TYPE -->
+                <!-- BEGIN ORDER-FORM-TYPE -->
+                <div id="rectangular-form-type" class="order-form-type">
+                  <div class="order-form-type__close">&#215;</div>
+                  <ul class="order-form-type__list">
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type1" class="order__form-type">
+                      <label for="order-form-type1" class="order__label">94 Островов</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type2" class="order__form-type">
+                      <label for="order-form-type2" class="order__label">Анжела</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type3" class="order__form-type">
+                      <label for="order-form-type3" class="order__label">Веселая карусель</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type4" class="order__form-type">
+                      <label for="order-form-type4" class="order__label">Пчелка Жу-Жу</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type5" class="order__form-type">
+                      <label for="order-form-type5" class="order__label">Смаковница</label>
+                    </li>
+                    <li class="order-form-type__item">
+                      <input type="radio" name="form-type" checked id="order-form-type6" class="order__form-type">
+                      <label for="order-form-type6" class="order__label">Лимпопо</label>
+                    </li>
+                  </ul>
+                </div>
+                <!-- END ORDER-FORM-TYPE -->
               </div>
-              <!-- END ORDER-FORM-TYPE -->
               <p class="order-form__text"><a href="#" class="order-form__link">Заказать пробный набор начинок</a><br><a href="#" class="order-form__link">Узнать подробнее</a></p>
             </div>
           </div>
@@ -347,11 +443,11 @@
                   <div class="order-delyvery__line">
                     <div class="order-delyvery__control">
                       <label for="" class="order-delyvery__label">Когда доставить торт</label>
-                      <input type="text" class="input order-delyvery__input">
+                      <input type="text" class="input order-delyvery__input input_date">
                     </div>
                     <div class="order-delyvery__control"><span class="order-delyvery__label">Промежуток времени</span>
-                      <input type="text" class="input order-delyvery__input order-delyvery__input_time">-
-                      <input type="text" class="input order-delyvery__input order-delyvery__input_time">
+                      <input type="text" class="input order-delyvery__input order-delyvery__input_time input_time">-
+                      <input type="text" class="input order-delyvery__input order-delyvery__input_time input_time">
                     </div>
                   </div>
                 </div>
@@ -506,15 +602,16 @@
     <script src="libs/html5shiv/html5shiv.min.js"></script>
     <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
     <script src="libs/respond/respond.min.js"></script><![endif]-->
-    <script>
-      var scr = {"scripts":[
-      {"src" : "libs/modernizr/modernizr.js", "async" : false},
-      {"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
-      {"src" : "libs/inputmask/input.mask.js", "async" : false},
-      {"src" : "libs/owl/owl.carousel.min.js", "async" : false},
-      {"src" : "libs/nice-select/jquery.nice-select.min.js", "async" : false},
-      {"src" : "js/common.js", "async" : false}
-      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-    </script>
+    <script src="libs/modernizr/modernizr.js"></script>
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="libs/inputmask/input.mask.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+    <script src="libs/cycle2/jquery.cycle2.min.js"></script>
+    <script src="libs/cycle2/jquery.cycle2.carousel.js"></script>
+    <script src="libs/cycle2/jquery.cycle2.caption2.js"></script>
+    <script src="libs/nice-select/jquery.nice-select.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>
   </div>
 </html>

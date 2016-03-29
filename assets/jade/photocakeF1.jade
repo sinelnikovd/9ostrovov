@@ -19,6 +19,20 @@ block content
 
 			// BEGIN SLIDER-VERTICAL 
 			.slider-vertical
+				.slider-vertical__photo
+					img(src="img/photocakeF1.jpg", alt="")
+				.slider-vertical__slider
+					.slider-vertical__next
+						i.icon.icon_up
+					.vertical-slider.slideshow(data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next=".slider-vertical__next" data-cycle-prev=".slider-vertical__prev" data-cycle-carousel-visible="3" data-cycle-carousel-vertical="true" data-cycle-caption-plugin="caption2")
+						img(src="img/vertical-slider1.jpg", alt="" data-cycle-title="Spring").vertical-slider__img
+						img(src="img/vertical-slider2.jpg", alt="" data-cycle-title="Spring").vertical-slider__img
+						img(src="img/vertical-slider3.jpg", alt="" data-cycle-title="Spring").vertical-slider__img
+						img(src="img/vertical-slider1.jpg", alt="" data-cycle-title="Spring").vertical-slider__img
+						img(src="img/vertical-slider2.jpg", alt="" data-cycle-title="Spring").vertical-slider__img
+						img(src="img/vertical-slider3.jpg", alt="" data-cycle-title="Spring").vertical-slider__img
+					.slider-vertical__prev
+						i.icon.icon_down
 			// END SLIDER-VERTICAL 
 
 			// BEGIN PHOTOCAKE__BUTTON-LINE 
@@ -67,6 +81,6 @@ block content
 				.sales-banner__content
 					i.icon.icon_persent
 					h3.sales-banner__title Как получить скидку?
-					p.sales-banner__text 
+					p.sales-banner__text У нас имеются накопительные скидки
 					a(href="#").button.button_white.sales-banner__button Все акции и скидки
 	// END SALES-BANNER 

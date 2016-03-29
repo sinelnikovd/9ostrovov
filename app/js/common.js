@@ -21,6 +21,17 @@ $(document).ready(function() {
 		mainCarousel.trigger('next.owl.carousel');
 	})*/
 
+	if($('.slider .slider__item').length > 1)
+		$('.slider').owlCarousel({
+			loop: true,
+			nav: false,
+			items: 1,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			dotsContainer: '.slider-dot',
+			dots: true,
+		});
+
 	var hamburgerMenu = function () {
 
 		if(!$('.side_hamburger').is(':visible')){
@@ -60,6 +71,71 @@ $(document).ready(function() {
 
 
 	$('.select-nice').niceSelect();
+
+	$.datetimepicker.setLocale('ru');
+
+	$('.input_date').datetimepicker({
+		i18n:{
+			ru:{
+				months:[
+				'Январь','Февраль','Март','Апрель',
+				'Май','Июнь','Июль','Август',
+				'Сентябрь','Октябрь','Ноябрь','Декабрь',
+				],
+				dayOfWeek:[
+				"Пн.", "Вт.", "Ср.", "Чт.", 
+				"Пт.", "Сб.", "Вс.",
+				]
+			}
+		},
+		timepicker:false,
+		value: new Date(),
+		format:'d.m.Y',
+		lang:'ru'
+	});
+
+	$('.input_time').datetimepicker({
+		i18n:{
+			ru:{
+				months:[
+				'Январь','Февраль','Март','Апрель',
+				'Май','Июнь','Июль','Август',
+				'Сентябрь','Октябрь','Ноябрь','Декабрь',
+				],
+				dayOfWeek:[
+				"Пн.", "Вт.", "Ср.", "Чт.", 
+				"Пт.", "Сб.", "Вс.",
+				]
+			}
+		},
+		datepicker:false,
+		value: new Date(),
+		format:'H:i',
+		lang:'ru'
+	});
+
+	$('.order-delyvery__tab-nav').click(function() {
+		if(!$(this).hasClass('active')){
+			$('.order-delyvery__tab-nav.active').removeClass('active');
+			$('.order-delyvery__tab.active').removeClass('active');
+			$('.order-delyvery__tab').eq($(this).index()).addClass('active');
+			$(this).addClass('active');
+		}
+	});
+
+
+	$('.order__form').change(function() {
+
+		$('.order-form-type.active').removeClass('active');
+		$("#"+$(this).data('type-id')).addClass('active')
+	});
+
+	$('.order-form-type__close').click(function() {
+		$('.order-form-type.active').removeClass('active');
+		$('.order__form:checked').removeAttr("checked");
+	});
+
+	$.fn.cycle.defaults.autoSelector = '.slideshow';
 
 });
 

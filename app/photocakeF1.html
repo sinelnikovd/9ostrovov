@@ -5,6 +5,7 @@
     <title>ФОТОТОРТЫ</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <!--link(rel="stylesheet" href="libs/datetimepicker/jquery.datetimepicker.css")-->
     <link rel="stylesheet" href="_main.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -184,7 +185,14 @@
           </div>
           <!-- END TITLE -->
           <!-- BEGIN SLIDER-VERTICAL -->
-          <div class="slider-vertical"></div>
+          <div class="slider-vertical">
+            <div class="slider-vertical__photo"><img src="img/photocakeF1.jpg" alt=""></div>
+            <div class="slider-vertical__slider">
+              <div class="slider-vertical__next"><i class="icon icon_up"></i></div>
+              <div data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next=".slider-vertical__next" data-cycle-prev=".slider-vertical__prev" data-cycle-carousel-visible="3" data-cycle-carousel-vertical="true" data-cycle-caption-plugin="caption2" class="vertical-slider slideshow"><img src="img/vertical-slider1.jpg" alt="" data-cycle-title="Spring" class="vertical-slider__img"><img src="img/vertical-slider2.jpg" alt="" data-cycle-title="Spring" class="vertical-slider__img"><img src="img/vertical-slider3.jpg" alt="" data-cycle-title="Spring" class="vertical-slider__img"><img src="img/vertical-slider1.jpg" alt="" data-cycle-title="Spring" class="vertical-slider__img"><img src="img/vertical-slider2.jpg" alt="" data-cycle-title="Spring" class="vertical-slider__img"><img src="img/vertical-slider3.jpg" alt="" data-cycle-title="Spring" class="vertical-slider__img"></div>
+              <div class="slider-vertical__prev"><i class="icon icon_down"></i></div>
+            </div>
+          </div>
           <!-- END SLIDER-VERTICAL -->
           <!-- BEGIN PHOTOCAKE__BUTTON-LINE -->
           <div class="photocake__button-line"><a href="#" class="button button_broun photocake__button-line__button">Сделать заказ на сайте</a><a href="#" class="button button_broun_border photocake__button-line__button photocake__button-line__bytton_white">Заказать торт по телефону</a><a href="#" class="photocake__button-line_link">Консультация кондитера</a></div>
@@ -234,7 +242,7 @@
           <div class="side-content">
             <div class="sales-banner__content"><i class="icon icon_persent"></i>
               <h3 class="sales-banner__title">Как получить скидку?</h3>
-              <p class="sales-banner__text"> </p><a href="#" class="button button_white sales-banner__button">Все акции и скидки</a>
+              <p class="sales-banner__text">У нас имеются накопительные скидки</p><a href="#" class="button button_white sales-banner__button">Все акции и скидки</a>
             </div>
           </div>
         </div>
@@ -325,15 +333,16 @@
     <script src="libs/html5shiv/html5shiv.min.js"></script>
     <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
     <script src="libs/respond/respond.min.js"></script><![endif]-->
-    <script>
-      var scr = {"scripts":[
-      {"src" : "libs/modernizr/modernizr.js", "async" : false},
-      {"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
-      {"src" : "libs/inputmask/input.mask.js", "async" : false},
-      {"src" : "libs/owl/owl.carousel.min.js", "async" : false},
-      {"src" : "libs/nice-select/jquery.nice-select.min.js", "async" : false},
-      {"src" : "js/common.js", "async" : false}
-      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-    </script>
+    <script src="libs/modernizr/modernizr.js"></script>
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="libs/inputmask/input.mask.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+    <script src="libs/cycle2/jquery.cycle2.min.js"></script>
+    <script src="libs/cycle2/jquery.cycle2.carousel.js"></script>
+    <script src="libs/cycle2/jquery.cycle2.caption2.js"></script>
+    <script src="libs/nice-select/jquery.nice-select.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>
   </div>
 </html>

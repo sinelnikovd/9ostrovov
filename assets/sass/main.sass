@@ -6,6 +6,7 @@
 
 @import "libs/sprite.sass"
 @import "libs/owl.carousel.sass"
+@import "libs/datetimepicker.sass"
 @import "libs/nice-select.scss"
 
 
@@ -202,6 +203,10 @@ img
 	+sprite($s-persent)
 .icon_shop-w
 	+sprite($s-shop-w)
+.icon_up
+	+sprite($s-up)
+.icon_down
+	+sprite($s-down)
 /* end icon */
 
 // text
@@ -283,6 +288,10 @@ img
 	border-radius: 2px
 	&:after
 		border-color: $c-broun
+.input_date
+	background-image: url(img/input-date.png)
+	background-repeat: no-repeat
+	background-position: 95% 10px
 // END INPUT 
 
 // BEGIN H1-H6 
@@ -943,6 +952,7 @@ img
 	margin: 10px
 	border: 1px solid transparent
 	border-radius: 50%
+	cursor: pointer
 	&.active
 		border-color: $c-broun
 	span
@@ -989,6 +999,7 @@ img
 // BEGIN SECTION-SLIDER 
 .section-slider
 	margin-top: 28px
+	position: relative
 .slider__item
 	background-image: url(img/cake-order.jpg)
 	background-repeat: no-repeat
@@ -1013,6 +1024,14 @@ img
 	line-height: 24px
 	@extend .bold
 	width: 40%
+.slider-dots
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 5
+.slider-dot
+	text-align: center
 // END SECTION-SLIDER 
 
 
@@ -1514,6 +1533,7 @@ img
 	height: 38px
 	width: 100%
 	border-radius: 2px
+	padding: 0 10px
 	box-sizing: border-box
 	border: 1px solid #d7d7d7
 .order-delyvery__input_time
@@ -1577,6 +1597,7 @@ img
 		& +.order__label
 			position: relative
 			font-size: 12px
+			cursor: pointer
 			@extend %c-broun
 			&:before
 				content: ''
@@ -1651,8 +1672,11 @@ img
 
 // BEGIN ORDER-FORM-TYPE 
 .order-form-type
+	display: none
 	background-color: #fbf4f4
 	position: relative
+	&.active
+		display: block
 	&:after,
 	&:before
 		content: ''
@@ -1691,6 +1715,7 @@ img
 	&:checked
 		& +.order__label
 			border-width: 2px
+			@extend .bold
 // END ORDER-FORM-TYPE 
 
 
@@ -2715,7 +2740,21 @@ img
 
 // BEGIN SLIDER-VERTICAL 
 .slider-vertical
-	height: 480px
+	+clearfix
+.slider-vertical__photo
+	float: left
+.slider-vertical__slider
+	float: left
+	padding-left: 20px
+	box-sizing: border-box
+.vertical-slider__img
+	height: 120px
+	padding: 7px 0
+
+.slider-vertical__next,
+.slider-vertical__prev
+	text-align: center
+	
 // END SLIDER-VERTICAL 
 
 // BEGIN PHOTOCAKE__BUTTON-LINE 
@@ -2788,6 +2827,53 @@ img
 	margin-top: 10px
 	padding: 0 20px
 // END SHOP-BANNER 
+
+// BEGIN SALES-BANNER 
+.sales-banner
+	background-image: url(img/sales-banner.jpg)
+	background-repeat: no-repeat
+	background-position: center top
+	background-size: cover
+	padding: 60px 0
+	margin-bottom: 2px
+.sales-banner__content
+	width: 40%
+	text-align: center
+	color: #fff
+.sales-banner__title
+	margin-top: 15px
+	text-transform: uppercase
+	font-size: 18px
+	@extend .bold
+.sales-banner__text
+	margin-top: 5px
+	line-height: 20px
+.sales-banner__button
+	margin-top: 10px
+	padding: 0 20px
+// END SALES-BANNER 
+
+
+// BEGIN MAP 
+.map__info
+	background-color: $c-broun
+	font-size: 14px
+	height: 40px
+	width: 200px
+	padding: 5px 10px
+	color: #fff
+.map__chem
+	background-color: rgba(0,0,0,.5)
+	height: 80px
+	text-align: center
+.map__street
+	@extend .bold
+.map__chem-link
+	color: #fff
+	@extend .bold
+	font-size: 18px
+	line-height: 80px
+// END MAP 
 
 //ALWAYS END
 @import "_media.sass"
