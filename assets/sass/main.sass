@@ -235,34 +235,52 @@ img
 	border: 0
 .button_call
 	height: 38px
-	line-height: 36px
+	line-height: 32px
 	padding: 0 5.6%
 	color: #fff
 	background-color: $c-broun
+	border: 2px solid $c-broun
+	box-sizing: border-box
+	&:hover
+		background-color: #fff
+		color: $c-broun
 .button_broun_border
 	border-radius: 4px
 	border: 2px solid $c-broun
 	color: $c-broun
-
+	&:hover
+		background-color: $c-broun
+		color: #fff
 .button_broun
 	height: 38px
-	line-height: 36px
+	line-height: 32px
 	border-radius: 4px
 	background-color: $c-broun
 	color: #fff
-
+	border: 2px solid $c-broun
+	box-sizing: border-box
+	&:hover
+		background-color: #fff
+		color: $c-broun
 .button_white
 	height: 38px
-	line-height: 36px
+	line-height: 32px
 	border-radius: 4px
 	color: $c-broun
 	background-color: #fff
-
+	border: 2px solid #fff
+	box-sizing: border-box
+	&:hover
+		border-color: $c-broun
 .button_still
 	height: 38px
 	line-height: 34px
 	padding: 0 7%
 	box-sizing: border-box
+	&:hover
+		.btn-still__text
+			&:after
+				border-color: #fff
 .button_product
 	border-width: 3px
 	height: 38px
@@ -714,6 +732,8 @@ img
 	@extend .bold
 	font-size: 18px
 	text-decoration: underline
+	&:hover
+		text-decoration: none
 .main-cakes-item__text
 	margin-top: 10px
 	line-height: 18px
@@ -726,6 +746,9 @@ img
 	box-sizing: border-box
 	&:first-child
 		margin-left: 0
+	&:hover
+		.main-cakes-item-mini__text
+			text-decoration: none
 .main-cakes-item-mini_m_t
 	margin-top: 30px
 .main-cakes-item-mini_m_b
@@ -1279,6 +1302,7 @@ img
 		border-bottom: 2px solid $c-broun
 		+transform(rotate(45deg))
 		box-sizing: border-box
+
 // END BTN-STILL 
 
 // BEGIN CONTENT 
@@ -1338,6 +1362,8 @@ img
 	&.active
 		@extend .bold
 		color: #141313
+	&:hover
+		@extend .bold
 .filter__still
 	float: left
 	width: 20%
@@ -2038,14 +2064,6 @@ img
 .excursion-banner__text
 	margin-top: 20px
 	line-height: 20px
-.excursion-banner__link
-	margin-top: 20px
-	display: inline-block
-	text-decoration: none
-	@extend .bold
-	@extend %c-broun
-	&:hover
-		text-decoration: underline
 .excursion-banner__left
 	margin-left: 7px
 // END EXCURSION-BANNER 
@@ -2136,9 +2154,12 @@ img
 	width: 89%
 .blog-card__title
 	@extend .bold
-	@extend %c-broun
 	font-size: 24px
+.blog-card__title-link
+	@extend %c-broun
 	text-decoration: underline
+	&:hover
+		text-decoration: none
 .blog-card__infos
 	margin-top: 25px
 .blog-card__icon
@@ -2290,6 +2311,9 @@ img
 .vacancy__all-link
 	@extend .bold
 	@extend %c-broun
+	text-decoration: underline
+	&:hover
+		text-decoration: none
 // END VACANCY 
 
 
@@ -2359,6 +2383,9 @@ img
 .addres__email-link
 	@extend .bold
 	@extend %c-broun
+	text-decoration: underline
+	&:hover
+		text-decoration: none
 // END ADDRES 
 
 
@@ -2661,12 +2688,6 @@ img
 	text-transform: uppercase
 .production-company__text
 	margin-top: 25px
-.production-company__link
-	display: inline-block
-	margin-top: 25px
-	text-decoration: none
-	@extend %c-broun
-	@extend .bold
 // END PRODUCTION-COMPANY 
 
 
@@ -2684,12 +2705,6 @@ img
 	text-transform: uppercase
 .excursion-company__text
 	margin-top: 25px
-.excursion-company__link
-	display: inline-block
-	margin-top: 25px
-	text-decoration: none
-	@extend %c-broun
-	@extend .bold
 .excursion-company__icon
 	float: left
 	width: 30%
@@ -2729,14 +2744,20 @@ img
 	text-transform: uppercase
 .work-company__text
 	margin-top: 25px
-.work-company__link
+
+// END WORK-COMPANY 
+
+
+// BEGIN LINK-MORE 
+.link-more
 	display: inline-block
 	margin-top: 25px
 	text-decoration: none
 	@extend %c-broun
 	@extend .bold
-// END WORK-COMPANY 
-
+	&:hover
+		text-decoration: underline
+// END LINK-MORE 
 
 // BEGIN SLIDER-VERTICAL 
 .slider-vertical
