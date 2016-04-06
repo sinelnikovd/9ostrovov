@@ -4,33 +4,27 @@ block title
 	title ЭКСКУРСИИ НА ПРОИЗВОДСТВО
 
 block content
-	// BEGIN TITLE 
 	.container
+		// BEGIN SIDE-CONTENT 
 		.side-content
+			// BEGIN TITLE 
 			.title
 				h1.title__text ЭКСКУРСИИ НА ПРОИЗВОДСТВО
-	// END TITLE 
-
-	// BEGIN DESCRIPTION 
-	.container
-		.side-content
+			// END TITLE 
+			// BEGIN DESCRIPTION 
 			.description
 				p.description__title.description__title_bold Сладкие шедевры ручной работы – многоярусные торты, настоящие сказочные истории из сахара и крема и веселые сюрпризы для Ваших любимых.
 				p.description__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
-	// END DESCRIPTION 
+			// END DESCRIPTION 
 
 
-	// BEGIN TOP-PHOTO 
-	.excursion-photo
-		.container
-			.side-content
+			// BEGIN TOP-PHOTO 
+			.excursion-photo
 				img(src="img/excursion-photo.jpg", alt="").excursion-photo__img
-	// END TOP-PHOTO 
+			// END TOP-PHOTO 
 
-	// BEGIN REQUEST-EXCURSION 
-	.request-excursion
-		.container
-			.side-content
+			// BEGIN REQUEST-EXCURSION 
+			.request-excursion
 				h2.request-excursion__title Заявка на экскурсию
 				form(action="/").request-excursion__form
 					.request-excursion__control
@@ -39,7 +33,7 @@ block content
 						input(type="text" placeholder="Контактный телефон").input.request-excursion__input.data-inputmask
 					.request-excursion__control.data-inputmask
 						label(for="people").request-excursion__label На экскурсию пойдут:
-						select(name="people")#people.request-excursion__select.select-nice
+						select(name="people")#people.request-excursion__select.select-nice.wide
 							option(value="1") Дети со взрослыми
 							option(value="2") Дети со взрослыми
 							option(value="3") Дети со взрослыми
@@ -48,19 +42,15 @@ block content
 						input(type="text")#ticket.input.request-excursion__input
 					.request-excursion__control
 						button(type="submit").button.button_broun.request-excursion__button Заказать
-	// END REQUEST-EXCURSION 
+			// END REQUEST-EXCURSION 
 
-	// BEGIN EXCURSION-TEXT 
-	.excursion-text
-		.container
-			.side-content
+			// BEGIN EXCURSION-TEXT 
+			.excursion-text
 				p.excursion-text__p Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
-	// END EXCURSION-TEXT 
+			// END EXCURSION-TEXT 
 
-	// BEGIN WORKSHOP 
-	.workshop
-		.container
-			.side-content
+			// BEGIN WORKSHOP 
+			.workshop
 				.colums
 					.col-w1
 						// BEGIN WORKSHOP__CARD 
@@ -107,17 +97,17 @@ block content
 									.workshop__preview
 										span.workshop__title Кондитерский цех
 							// END WORKSHOP__CARD 
-	// END WORKSHOP 
+			// END WORKSHOP 
 
-	// BEGIN REVIEWS 
-	.reviews.reviews_ptn
-		.container
-			.side-content
+			// BEGIN REVIEWS 
+			.reviews.reviews_ptn
 				h2.h2 Отзывы
 				hr.hr.reviews__hr
 				form(action="/").reviews__form
 					textarea(name="", rows="10").textarea.reviews__textarea
 					.button-container
 						button(type="submit").button.button_broun.reviews__button Оставить отзыв
-	// END REVIEWS 
+			// END REVIEWS 
+
+		// END SIDE-CONTENT 
 

@@ -5,6 +5,7 @@ block title
 
 block content
 	.container
+		// BEGIN SIDE-CONTENT 
 		.side-content
 			// BEGIN TITLE 
 			.title
@@ -84,23 +85,24 @@ block content
 
 			// BEGIN PRODUCTION-COMPANY 
 			.production-company
+				h2.production-company__title ПРОИЗВОДСТВО
+				.production-company__icon
+					i.icon.icon_cap
 				.production-company__description
-					h2.production-company__title ПРОИЗВОДСТВО
 					p.production-company__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
 
 					a(href="#").link-more Подробнее
 						i.icon.icon_b-left.excursion-banner__left
-				.production-company__icon
-					i.icon.icon_cap
+
 			// END PRODUCTION-COMPANY 
 
 			// BEGIN EXCURSION-COMPANY 
 			.excursion-company
 				.sides
+					h2.excursion-company__title ЭКСКУРСИЯ НА ПРОИЗВОДСТВО
 					.excursion-company__icon
 						i.icon.icon_camera
 					.excursion-company__description
-						h2.excursion-company__title ЭКСКУРСИЯ НА ПРОИЗВОДСТВО
 						p.excursion-company__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
 
 						a(href="#").link-more Подробнее
@@ -116,7 +118,7 @@ block content
 							input(type="text" placeholder="Контактный телефон").input.request-excursion__input.data-inputmask
 						.request-excursion__control
 							label(for="people").request-excursion__label На экскурсию пойдут:
-							select(name="people")#people.request-excursion__select.select-nice
+							select(name="people")#people.request-excursion__select.select-nice.wide
 								option(value="1") Дети со взрослыми
 								option(value="2") Дети со взрослыми
 								option(value="3") Дети со взрослыми
@@ -130,14 +132,15 @@ block content
 
 			// BEGIN WORK-COMPANY 
 			.work-company
+				h2.work-company__title РАБОТА В КОМПАНИИ
+				.work-company__icon
+					i.icon.icon_man
 				.work-company__description
-					h2.work-company__title РАБОТА В КОМПАНИИ
 					p.work-company__text «Кадры решают всё» -в наши дни этот известный лозунг становится все более актуальным: необходимо работать на опережение и готовиться к предстоящей борьбе за таланты, уделяя особое внимание молодым специалистам, помогая им развиваться. Сотрудники нашего коллектива – главная ценность, мы ценим каждого кто приносит вклад в развитие и процветание нашей компании.
 
 					a(href="#").link-more Подробнее
 						i.icon.icon_b-left.excursion-banner__left
-				.work-company__icon
-					i.icon.icon_man
+
 			// END WORK-COMPANY 
 			// BEGIN CONTACT 
 			.contact
@@ -181,3 +184,4 @@ block content
 							банк реконструкции и развития" <br>
 							К/с 30101810900000000795 БИК 046577795
 			// END CONTACT 
+		// END SIDE-CONTENT 

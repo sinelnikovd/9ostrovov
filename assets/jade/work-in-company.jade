@@ -4,25 +4,22 @@ block title
 	title РАБОТА В КОМПАНИИ
 
 block content
-	// BEGIN TITLE 
 	.container
+		// BEGIN SIDE-CONTENT 
 		.side-content
+			// BEGIN TITLE 
 			.title
 				h1.title__text РАБОТА В КОМПАНИИ
-	// END TITLE 
+			// END TITLE 
 
-	// BEGIN DESCRIPTION 
-	.container
-		.side-content
+			// BEGIN DESCRIPTION 
 			.description
 				p.description__title.description__title_bold «Кадры решают всё» -в наши дни этот известный лозунг становится все более актуальным: необходимо работать на опережение и готовиться к предстоящей борьбе за таланты, уделяя особое внимание молодым специалистам, помогая им развиваться.
 				p.description__text Сотрудники нашего коллектива – главная ценность, мы ценим каждого кто приносит вклад в развитие и процветание нашей компании.
-	// END DESCRIPTION 
+			// END DESCRIPTION 
 
-	// BEGIN RESUME-BLOCK 
-	.resume-block
-		.container
-			.side-content
+			// BEGIN RESUME-BLOCK 
+			.resume-block
 				.sides
 					.resume-block__side.resume-block__side_l
 						form(action="/").resume-form
@@ -62,15 +59,13 @@ block content
 								img(src="img/resume-photo1.jpg", alt="")
 							.resume-block__photo.resume-block__photo_r
 								img(src="img/resume-photo2.jpg", alt="")
-	// END RESUME-BLOCK 
+			// END RESUME-BLOCK 
 
-	// BEGIN VACANCY-BLOCK 
-	.vacancy-block
-		.container
-			.side-content
+			// BEGIN VACANCY-BLOCK 
+			.vacancy-block
 				h2.vacancy-block__title Актуальные вакансии
 				.colums
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -80,7 +75,7 @@ block content
 									p.vacancy__title Логист
 									p.vacancy__price 30 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -90,7 +85,7 @@ block content
 									p.vacancy__title Мойщик тары
 									p.vacancy__price 13 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -100,7 +95,7 @@ block content
 									p.vacancy__title Логист
 									p.vacancy__price 30 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -110,7 +105,7 @@ block content
 									p.vacancy__title Логист
 									p.vacancy__price 30 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -120,7 +115,7 @@ block content
 									p.vacancy__title Мойщик тары
 									p.vacancy__price 13 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -130,7 +125,7 @@ block content
 									p.vacancy__title Логист
 									p.vacancy__price 30 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -140,7 +135,7 @@ block content
 									p.vacancy__title Логист
 									p.vacancy__price 30 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -150,7 +145,7 @@ block content
 									p.vacancy__title Мойщик тары
 									p.vacancy__price 13 000 руб.
 						// END VACANCY 
-					.col-2.col-2-m
+					.col-2.col-2-m.col-2-r
 						// BEGIN VACANCY 
 						.vacancy
 							a(href="#").vacancy__link
@@ -164,15 +159,15 @@ block content
 
 				p.vacancy__all
 					a(href="#").vacancy__all-link Все вакансии...
-	// END VACANCY-BLOCK 
+			// END VACANCY-BLOCK 
 
 
-	// BEGIN CONFECTIONER-SCHOOL 
-	.container
-		.side-content
+			// BEGIN CONFECTIONER-SCHOOL 
 			.confectioner-school
 				h2.confectioner-school__title “Девять островов” приглашает юношей и девушек в Школу кондитеров
 				.sides
+					.confectioner-school__side.confectioner-school__side_r
+						img(src="img/school-preview.jpg", alt="")
 					.confectioner-school__side.confectioner-school__side_l
 						p.confectioner-school__text У нас в Компании вас ждёт интересная работа, профессиональный коллектив и все возможности для самореализации!
 
@@ -183,13 +178,13 @@ block content
 							li.confectioner-school__item - Официальное трудоустройство
 							li.confectioner-school__item - Соц. пакет
 							li.confectioner-school__item - Режим работы 5/2, с 8:00 до 17:00
-					.confectioner-school__side.confectioner-school__side_r
-						img(src="img/school-preview.jpg", alt="")
-	// END CONFECTIONER-SCHOOL 
 
+			// END CONFECTIONER-SCHOOL 
+		// END SIDE-CONTENT 
 	// BEGIN ADDRES-BACKGROUND 
 	.addres-background
 		.container
+			// BEGIN SIDE-CONTENT 
 			.side-content
 				.addres
 					i.icon.icon_cap
@@ -199,6 +194,7 @@ block content
 						a(href="tel:+73433727150").addres__phone-link +7 (343) 372-71-50 (51)
 					p.addres__email
 						a(href="mailto:personal@9ostrovov.ru").addres__email-link personal@9ostrovov.ru
+			// END SIDE-CONTENT 
 
 	// END ADDRES-BACKGROUND 
 

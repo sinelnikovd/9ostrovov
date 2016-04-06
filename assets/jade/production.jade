@@ -4,30 +4,30 @@ block title
 	title Производство
 
 block content
-	// BEGIN TITLE 
 	.container
+		// BEGIN SIDE-CONTENT 
 		.side-content
+			// BEGIN TITLE 
 			.title
 				h1.title__text Производство
-	// END TITLE 
+			// END TITLE 
 
-	// BEGIN DESCRIPTION 
-	.container
-		.side-content
+			// BEGIN DESCRIPTION 
 			.description
 				p.description__title.description__title_bold Сладкие шедевры ручной работы – многоярусные торты, настоящие сказочные истории из сахара и крема и веселые сюрпризы для Ваших любимых.
 				p.description__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
-	// END DESCRIPTION 
+			// END DESCRIPTION 
+		// END SIDE-CONTENT 
 
 	// BEGIN PRODUCTION-BANNER 
 	.production-banner
 	// END PRODUCTION-BANNER 
 
-
-	// BEGIN WORKSHOP 
-	.workshop
-		.container
-			.side-content
+	.container
+		// BEGIN SIDE-CONTENT 
+		.side-content
+			// BEGIN WORKSHOP 
+			.workshop
 				.colums
 					.col-w1
 						// BEGIN WORKSHOP__CARD 
@@ -74,21 +74,20 @@ block content
 									.workshop__preview
 										span.workshop__title Кондитерский цех
 							// END WORKSHOP__CARD 
-	// END WORKSHOP 
+			// END WORKSHOP 
 
 
-	// BEGIN EXCURSION-BANNER 
-
-	.container
-		.side-content
+			// BEGIN EXCURSION-BANNER 
 			.excursion-banner
+				h2.excursion-banner__title ЭКСКУРСИЯ НА ПРОИЗВОДСТВО
 				.sides
+					.excursion-banner__image
+						i.icon.icon_camera
 					.excursion-banner__description
-						h2.excursion-banner__title ЭКСКУРСИЯ НА ПРОИЗВОДСТВО
+
 						p.excursion-banner__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
 						a(href="#").link-more Подробнее
 							i.icon.icon_b-left.excursion-banner__left
-					.excursion-banner__image
-						i.icon.icon_camera
 
-	// END EXCURSION-BANNER 
+			// END EXCURSION-BANNER 
+		// END SIDE-CONTENT 

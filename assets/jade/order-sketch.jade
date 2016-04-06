@@ -4,38 +4,46 @@ block title
 	title ЗАКАЗАТЬ ТОРТ ПО СВОЕМУ ЭКСКИЗУ
 
 block content
-	// BEGIN TITLE 
 	.container
+		// BEGIN SIDE-CONTENT 
 		.side-content
+			// BEGIN TITLE 
 			.title
 				h1.title__text ЗАКАЗАТЬ ТОРТ ПО СВОЕМУ ЭКСКИЗУ
-	// END TITLE 
+			// END TITLE 
+		// END SIDE-CONTENT 
+
 
 
 	form(action="/")
 		// BEGIN ORDER-ADD-FILE 
 		.order-add-file
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Добавьте файл или фото своего экскиза
 					.file-upload
 						button(type="button").file-upload__button Добавить файл
 						span.file-upload__text Файл не выбран
 						input(type="file").file-upload__file
+				// END SIDE-CONTENT 
 		// END ORDER-ADD-FILE 
 
 		// BEGIN ORDER-TEXT 
 		.order-text
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Впишите в поле текст, который вы бы хотели разместить на торте
 					.form-control
 						input(type="text" placeholder="Маша, с Днем Рождения!").input.order__input
+				// END SIDE-CONTENT 
 		// END ORDER-TEXT 
 
 		// BEGIN ORDER-WEIGHT 
 		.order-weight
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Вес торта
 					.order__round-radio
@@ -55,49 +63,53 @@ block content
 						i.icon.icon_fork.calculation__icon
 						input(type="text" placeholder="2").input.calculation__input
 						span.order-weight__count = 2,5 кг.
+				// END SIDE-CONTENT 
 		// END ORDER-WEIGHT 
 
 
 		// BEGIN ORDER-LONGLINES 
 		.order-longlines
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Количество ярусов
 					.order__round-radio
-						.order__control
+						.order__control.order__control_longlines
 							input(type="radio" name="longlines")#classic-longlines.order__radio
 							label(for="classic-longlines").order__label.order__label_big.order__label_one_line Классический
-						.order__control
+						.order__control.order__control_longlines
 							input(type="radio" name="longlines" checked)#type-longlines.order__radio
 							label(for="type-longlines").order__label.order__label_big Укажите<br>тип яруса
-						.order__control
+						.order__control.order__control_longlines
 							input(type="radio" name="longlines")#type2-longlines.order__radio
 							label(for="type2-longlines").order__label.order__label_big Выберите<br>тип яруса
-						.order__control
+						.order__control.order__control_longlines
 							input(type="radio" name="longlines")#add-longlines.order__radio
 							label(for="add-longlines").order__label.order__label_big.order__label_add Добавить <br>ярус
 					.order__stand
 						input(type="checkbox")#stand.oreder__checkbox
 						label(for="stand").label_stand Арендовать подставку 
+				// END SIDE-CONTENT 
 		// END ORDER-LONGLINES 
 
 
 		// BEGIN ORDER-FORM 
 		.order-form
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Форма торта
 					.order__round-radio.order__round-radio_form
-						.order__control
+						.order__control.order__control_form
 							input(type="radio" name="form" checked data-type-id="standart-form-type")#standart-form.order__form.order__form_standart
 							label(for="standart-form").order__label Круглая
-						.order__control
+						.order__control.order__control_form
 							input(type="radio" name="form" data-type-id="nostandart-form-type")#nostandart-form.order__form.order__form_nostandart
 							label(for="nostandart-form").order__label Нестандартная
-						.order__control
+						.order__control.order__control_form
 							input(type="radio" name="form" data-type-id="square-form-type")#square-form.order__form.order__form_square
 							label(for="square-form").order__label Квадратная
-						.order__control
+						.order__control.order__control_form
 							input(type="radio" name="form" data-type-id="rectangular-form-type")#rectangular-form.order__form.order__form_rectangular
 							label(for="rectangular-form").order__label Прямоугольная
 					.order-form-types
@@ -197,11 +209,13 @@ block content
 						a(href="#").order-form__link Заказать пробный набор начинок
 						br
 						a(href="#").order-form__link Узнать подробнее
+				// END SIDE-CONTENT 
 		// END ORDER-FORM 
 
 		// BEGIN ORDER-DELYVERY 
 		.order-delyvery
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Способ доставки
 					.order-delyvery__tabs-nav
@@ -225,13 +239,14 @@ block content
 									input(type="text").input.order-delyvery__input.order-delyvery__input_time.input_time
 									| -
 									input(type="text").input.order-delyvery__input.order-delyvery__input_time.input_time
-
+				// END SIDE-CONTENT 
 		// END ORDER-DELYVERY 
 
 
 		// BEGIN ORDER-CHECK 
 		.order-check
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Стоимость и оплата
 					.sides.order-check__sides
@@ -253,12 +268,14 @@ block content
 								p.provisional-price__text Предварительная стоимость торта:
 								p.provisional-price__price 1500
 									span.rubl.rubl_big Р
+				// END SIDE-CONTENT 
 		// END ORDER-CHECK 
 
 
 		// BEGIN ORDER-CONTACT 
 		.order-contact
 			.container
+				// BEGIN SIDE-CONTENT 
 				.side-content
 					h2.order-title Оставьте контактные данные для заказа
 					.order-contact__line
@@ -273,5 +290,6 @@ block content
 							option(value="1") Оплатить в торговой точке
 					.order-contact__line
 						button(type="submit").button.button_broun.order-contact__button Перейти к оплате
+				// END SIDE-CONTENT 
 		// END ORDER-CONTACT 
 

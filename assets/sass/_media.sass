@@ -8,7 +8,7 @@
 		width: 60%
 
 	.top-menu__link
-		font-size: 13px
+		//font-size: 13px
 
 	.sidebar
 		width: 23%
@@ -70,22 +70,90 @@
 	.footer-social__item
 		margin-left: 0
 
+
+
+	// BEGIN ORDER 
+	.order-delyvery__line
+		width: 50%
+	.order-contact__line
+		width: 50%
+	// END ORDER 
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.top-line__side_l
-		width: 50%
+		width: 100%
+		text-align: center
+		float: none
+	.logo__img-parent
+		float: none
+		margin: 0 auto
 	.top-line__side_r
-		float: right
+		float: none
 		width: 100%
 		text-align: center
 
 	.side_hamburger
-		width: 50%
+		width: 100%
+		float: none
+		background-color: $c-broun
+		position: relative
+		margin-top: 10px
+		padding-bottom: 10px
+		&:after,
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			top: 0
+			bottom: 0
+			background-color: $c-broun
+		&:after
+			left: 100%
+		&:before
+			right: 100%
+		&.fix
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			margin-top: 0
+			padding: 0 10px 10px
+			box-sizing: border-box
+			z-index: 20
+	.hamburger__text
+		display: block
 		float: left
 
+	.hamburger__line
+		background-color: #fff
+	.top-line
+		padding-bottom: 0
+
+	.phone
+		margin-top: 0
+	.phone__link
+		margin-top: 8px
+	.phone__button
+		margin-top: 8px
+
 	.col-4,
-	.col-2
+	.col-2,
+	.col-3
 		width: 100%
+
+	.col-3-m
+		&:nth-child(2n-1)
+			margin-right: 0
+	.col-2-m
+		&:nth-child(3n-1)
+			margin-left: 0
+			margin-right: 0
+
+	.col-2-r
+		width: 359/748*100%
+		&:nth-child(2n-1)
+			margin-right: 30/748*100%
 
 	.main-production__item
 		width: 100%
@@ -169,12 +237,417 @@
 
 
 
+
+	// BEGIN BLOG 
+	.blog-card__author
+		float: none
+		width: 100%
+	.blog-card__description
+		float: none
+		width: 100%
+
+	.blog-card__info
+		margin-left: 1%
+
+	.blog-card__preview,
+	.blog-card__text
+		float: none
+		width: 100%
+
+	// END BLOG 
+
+
+	// BEGIN SALES 
+	.action__content
+		width: 60%
+	.action.action_right .action__content
+		margin-left: 40%
+	// END SALES 
+
+
+	// BEGIN CAKE-ORDER 
+	.order-stage__line
+		top: 40%
+	.cake-filling__item
+		width: 33.333%
+
+	// END CAKE-ORDER 
+
+	// BEGIN CAKE-PHOTO2 
+	.title-price__side_l,
+	.title-price__side_r
+		float: none
+		width: 100%
+		text-align: left
+	.title-price__side
+		.title
+			padding-bottom: 0
+	.top__price
+		padding-top: 0
+	// END CAKE-PHOTO2 
+
+
+	// BEGIN BUY 
+	.col-buy
+		width: 50%
+	.buy-city__city,
+	.buy-city__text,
+	.buy-city__button
+		width: 100%
+	.buy-city__text
+		padding-top: 0
+		padding-bottom: 10px
+	// END BUY 
+
+
+	// BEGIN WORKSHOP 
+	.col-w1,
+	.col-w2,
+	.col-w3
+		float: none
+		width: 100%
+		margin-right: 0
+		margin-bottom: 8px
+	.workshop__card_line_1 .workshop__preview
+		height: 200px
+	// END WORKSHOP 
+
+	.request-excursion__control
+		width: 100%
+		float: left
+		margin: 5px 0
+	.request-excursion__label
+		position: static
+		display: inline-block
+
+	// BEGIN WOR-INCOMPANY 
+	.resume-block__side
+		float: none
+		width: 100%
+		padding-left: 0
+		padding-right: 0
+	.confectioner-school__side
+		float: none
+		width: 100%
+		padding-left: 0
+		padding-right: 0
+	// END WOR-INCOMPANY 
+
+	// BEGIN HISTORY 
+
+	.history__line_1:before
+		left: 74px
+	.history__year_big .history__description
+		top: -25px
+		left: 0
+
+	.history__year_medium .history__description
+		top: -20px
+		left: 0
+
+	.history__year_2010 .history__description
+		top: -20px
+		left: 0
+		width: auto
+	.history__year_small .history__description
+		top: -40px
+		left: 0
+
+	.history__year_2012 .history__description,
+	.history__year_2015 .history__description
+		top: -40px
+
+	.history__year_2016 .history__description
+		top: -50px
+
+	.history__year_2001
+		margin-left: 16%
+	.history__year_2003
+		margin-left: 15%
+	.history__year_2008
+		margin-left: 14%
+	.history__year_2005
+		margin-left: 14%
+
+	.history__year_2015
+		margin-left: 14%
+	.history__year_2016
+		margin-left: 18%
+
+	.col-y-3
+		float: none
+		width: 100%
+		padding-right: 0
+		padding-left: 0
+	// END HISTORY 
+
+	// BEGIN COMPANY 
+	.about__item
+		width: 50%
+		margin-bottom: 10px
+	// END COMPANY 
+
+	// BEGIN FILTER 
+	.filter__list
+		width: 70%
+	.filter__still
+		width: 30%
+	// END FILTER 
+
+
+	// BEGIN ORDER 
+	.order-top__side
+		float: none
+		width: 100
+		text-align: center
+		padding-left: 0
+		padding-right: 0
+	.order-top__side_m
+		padding-top: 15px
+	.order-top__side_r
+		padding-top: 10px
+	.order__control_form
+		margin-left: 0
+	.order-delyvery__line
+		width: 80%
+	.order-check__side
+		float: none
+		width: 100%
+	.provisional-price
+		width: 100%
+		margin: 20px 0 0
+	.order-contact__line
+		width: 80%
+	.form-control
+		width: 70%
+	// END ORDER 
+
+	// BEGIN PHOTOCAKEF1 
+	.delivery-banner__content,
+	.shop-banner__content,
+	.sales-banner__content
+		width: 80%
+	.shop-banner__content
+		margin-left: 20%
+	.photocake__button-line__button
+		padding: 0 15px
+	.photocake__button-line_link
+		margin-top: 10px
+		display: inline-block
+		margin-left: 10%
+	// END PHOTOCAKEF1 
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.main-banner__text
 		width: 100%
 	.main-about__text
 		width: 100%
+
+	.col-2-r
+		width: 100%
+		&:nth-child(2n-1)
+			margin-right: 0
+
+	// BEGIN SALES 
+	.action__content
+		width: 100%
+	.action.action_right .action__content
+		margin-left: 0
+	// END SALES 
+
+	// BEGIN SLIDER 
+	.slider__title
+		width: 100%
+	// END SLIDER 
+
+
+	// BEGIN CAKE-ORDER 
+	.order-stage__line
+		display: none
+	.order-stage__item,
+	.cake-order-two-item__title-text,
+	.cake-order-two-item__price
+		float: none
+		width: 100%
+	.order-stage__round
+		max-width: 200px
+	.cake-by-sketch__content
+		padding-left: 10px
+		padding-right: 10px
+	.cake-order-two-item__price
+		text-align: left
+	.slider__text
+		width: 100%
+	.cake-filling__item
+		width: 50%
+	// END CAKE-ORDER 
+
+	// BEGIN BUY 
+	.col-buy
+		width: 100%
+	// END BUY 
+
+	// BEGIN WORKSHOP 
+	.excursion-banner__image,
+	.excursion-banner__description
+		width: 100%
+		float: none
+	// END WORKSHOP 
+
+
+	// BEGIN HISTORY 
+	.yaer-card__yaer
+		width: 15%
+	.yaer-card__info
+		width: 85%
+
+	.history__line_3:before
+		width: 50%
+
+	.history__year_big .history__description
+		top: -50px
+		left: 50%
+		+transform(translateX(-50%))
+		width: auto
+		text-align: center
+	.history__year_2016 .history__description
+		top: -70px
+
+	.history__year_medium .history__description
+		width: auto
+		text-align: center
+		top: -40px
+		left: 50%
+		+transform(translateX(-50%))
+
+	.history__year_2015 .history__description
+		top: -60px
+
+	.history__year_small .history__description
+		text-align: center
+		top: -40px
+		left: 50%
+		+transform(translateX(-50%))
+
+	.history__year
+		&:after,
+		&:before
+			+size(5px)
+		&:after
+			left: -7px
+		&:before
+			right: -7px
+	.history__line_1:before
+		left: 0px
+
+	.history__l-border
+		left: -8px
+
+	.history__year_2001
+		margin-left: 7%
+	.history__year_2003
+		margin-left: 10%
+	.history__year_2008
+		margin-left: 7%
+	.history__year_2005
+		margin-left: 8%
+	.history__year_2012
+		margin-left: 7%
+	.history__year_2015
+		margin-left: 9%
+	.history__year_2016
+		margin-left: 6%
+	// END HISTORY 
+
+
+	// BEGIN COMPANY 
+	.about__item
+		width: 100%
+	.excursion-company__title
+		margin-left: 0
+	.production-company__icon,
+	.production-company__description,
+	.excursion-company__icon,
+	.excursion-company__description,
+	.work-company__icon,
+	.work-company__description
+		float: none
+		width: 100%
+		padding-left: 0
+		padding-right: 0
+	// END COMPANY 
+
+	// BEGIN FILTER 
+	.filter__list
+		width: 50%
+	.filter__still
+		width: 50%
+	// END FILTER 
+
+
+	// BEGIN ORDER 
+	.form-control
+		width: 100%
+	.order-delyvery__tab-nav
+		float: none
+	.order__control_longlines
+		margin-left: 0
+		margin-bottom: 10px
+	.order-delyvery__line
+		width: 100%
+	.order-delyvery__control
+		float: none
+		width: 100%
+		margin-bottom: 10px
+	.order-contact__line
+		width: 100%
+	.order__control_form
+		width: 45%
+	.order-form-type
+		margin-bottom: 20px
+		text-align: left
+	// END ORDER 
+
+
+	// BEGIN PHOTOCAKEF1 
+	.delivery-banner__content,
+	.shop-banner__content,
+	.sales-banner__content
+		width: 100%
+	.shop-banner__content
+		margin-left: 0
+	.photocake__button-line
+		text-align: center
+	.photocake__button-line__button
+		display: inline-block
+		width: 100%
+		margin-left: 0
+		margin-bottom: 10px
+		padding: 0
+		text-align: center
+	.photocake__button-line_link
+		margin-top: 0
+		margin-left: 0
+	.slider-vertical__photo
+		float: none
+		width: 100%
+	.slider-vertical__slider
+		float: none
+		width: 100%
+		padding-left: 0
+		text-align: center
+		.cycle-carousel-wrap
+			width: 100%
+			text-align: center
+			img
+				margin: 0 auto
+	// END PHOTOCAKEF1 
+
+
+
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

@@ -4,20 +4,18 @@ block title
 	title ТОРТ НА ЗАКАЗ
 
 block content
-	// BEGIN TITLE 
 	.container
 		.side-content
+			// BEGIN TITLE 
 			.title
 				h1.title__text Торт на заказ
-	// END TITLE 
+			// END TITLE 
 
-	// BEGIN DESCRIPTION 
-	.container
-		.side-content
+			// BEGIN DESCRIPTION 
 			.description
 				p.description__title.description__title_bold Сладкие шедевры ручной работы – многоярусные торты, настоящие сказочные истории из сахара и крема и веселые сюрпризы для Ваших любимых.
 				p.description__text Воздушное тесто, нежные сливочные кремы и фруктовые муссы, свежие сочные ягоды и легкая йогуртовая начинка – сказочное сочетание ингредиентов и фантазийного декора тортов подарит истинное наслаждение всем любителям сладкого!
-	// END DESCRIPTION 
+			// END DESCRIPTION 
 
 
 
@@ -56,10 +54,11 @@ block content
 	// END SECTION-SLIDER 
 
 
-	// BEGIN ORDER-STAGE 
-	.order-stage
-		.container
-			.side-content
+	.container
+		// BEGIN SIDE-CONTENT 
+		.side-content
+			// BEGIN ORDER-STAGE 
+			.order-stage
 				h2.h2 Заказать торт очень просто
 				.order-stage__items
 					.order-stage__line
@@ -92,23 +91,18 @@ block content
 								i.icon.icon_order.order-stage__icon
 						p.order-stage__text Оформить заказ
 					// END ORDER-STAGE__ITEM 
-	// END ORDER-STAGE 
+			// END ORDER-STAGE 
 
-	// BEGIN CAKE-BY-SKETCH 
-	.cake-by-sketch
-		.container
-			.side-content
+			// BEGIN CAKE-BY-SKETCH 
+			.cake-by-sketch
 				.cake-by-sketch__content
 					i.icon.icon_cap.cake-by-sketch__icon
 					h2.cake-by-sketch__text У ВАС ЕСТЬ ВОЗМОЖНОСТЬ ЗАКАЗАТЬ ТОРТ ПО СОБСТВЕННОМУ ЭСКИЗУ!
 					a(href="#").button.button_broun.cake-by-sketch__button Создать свой торт
-	// END CAKE-BY-SKETCH 
+			// END CAKE-BY-SKETCH 
 
-	// BEGIN MAIN-CAKES 
-	.main-cakes
-		.container
-			// BEGIN SIDE-CONTENT 
-			.side-content
+			// BEGIN MAIN-CAKES 
+			.main-cakes
 				h2.main-cakes__title Торты на заказ
 				.colums.main-cakes__colums
 					.col-4.col_m_r
@@ -218,14 +212,10 @@ block content
 												span.rubl Р
 										p.main-cakes-item-mini__text Подарочные торты
 							// END MAIN-CAKES-ITEM-MINI 
-			// END SIDE-CONTENT 
-	// END MAIN-CAKES 
+			// END MAIN-CAKES 
 
-
-	// BEGIN CAKE-FILLING 
-	.cake-filling
-		.container
-			.side-content
+			// BEGIN CAKE-FILLING 
+			.cake-filling
 				h2.h2 Начинки
 				.cake-filling__list
 					// BEGIN CAKE-FILLING__ITEM 
@@ -278,31 +268,24 @@ block content
 						img(src="img/cake-filling.jpg", alt="").cake-filling__preview
 						p.cake-filling__name Ореховая начинка
 					// END CAKE-FILLING__ITEM 
-
-	// END CAKE-FILLING 
-
-
-	// BEGIN REVIEWS 
-	.reviews
-		.container
-			.side-content
+			// END CAKE-FILLING 
+			// BEGIN REVIEWS 
+			.reviews
 				h2.h2 Отзывы
 				hr.hr.reviews__hr
 				form(action="/").reviews__form
 					textarea(name="", rows="10").textarea.reviews__textarea
 					.button-container
 						button(type="submit").button.button_broun.reviews__button Оставить отзыв
-	// END REVIEWS 
-
-	// BEGIN SOCIAL 
-	.social
-		.container
-			// BEGIN SIDE-CONTENT 
-			.side-content
+			// END REVIEWS 
+			// BEGIN SOCIAL 
+			.social
 				.colums
 					.vk
 						img(src="img/vk.png", alt="")
 					.fb
 						img(src="img/fb.png", alt="")
-			// END SIDE-CONTENT 
-	// END SOCIAL 
+			// END SOCIAL 
+		// END SIDE-CONTENT 
+
+
